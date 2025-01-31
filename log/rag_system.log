@@ -1,0 +1,1716 @@
+2025-01-20 13:44:12 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 13:45:14 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-20 13:45:14 KST - INFO - 중복된 키 'dense_full_page_no_reranker'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-20 13:45:14 KST - INFO - 중복된 키 'dense_full_page_no_reranker'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-20 13:45:14 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250120_q_250109_QnA_direct_woman_2.json
+2025-01-20 13:57:54 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 13:57:57 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-20 13:58:42 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 13:58:46 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-20 13:59:13 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 13:59:16 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-20 14:29:18 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 14:29:21 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-20 14:43:23 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 14:43:32 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 14:43:37 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-20 14:43:39 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-20 14:43:41 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-20 14:43:41 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250120_q_250109_QnA_direct_woman_2.json
+2025-01-20 14:44:27 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 14:44:27 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-20 14:47:20 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 14:47:20 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-20 14:47:21 KST - INFO - 새 질문 번호 1의 결과를 저장했습니다.
+2025-01-20 14:47:23 KST - INFO - 새 질문 번호 2의 결과를 저장했습니다.
+2025-01-20 14:47:23 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250120_q_250109_QnA_direct_woman_2.json
+2025-01-20 14:47:39 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 14:47:43 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-20 14:47:44 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-20 14:47:46 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-20 14:47:46 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250120_q_250109_QnA_direct_woman_2.json
+2025-01-20 14:48:32 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 14:48:34 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-20 14:48:35 KST - INFO - 'dense_api_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-20 14:50:08 KST - INFO - 'dense_api_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-20 14:50:08 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250120_q_250109_QnA_direct_woman_2.json
+2025-01-20 14:52:29 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 14:52:30 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-20 14:52:30 KST - INFO - 새 질문 번호 1의 결과를 저장했습니다.
+2025-01-20 14:52:33 KST - INFO - 새 질문 번호 2의 결과를 저장했습니다.
+2025-01-20 14:52:33 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250120_q_250109_QnA_direct_woman_2.json
+2025-01-20 14:54:12 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 14:54:13 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-20 14:54:14 KST - INFO - 새 질문 번호 1의 결과를 저장했습니다.
+2025-01-20 14:54:15 KST - INFO - 새 질문 번호 2의 결과를 저장했습니다.
+2025-01-20 14:54:15 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250120_q_250109_QnA_direct_woman_2.json
+2025-01-20 14:54:33 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 14:54:37 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-20 14:54:38 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-20 14:54:40 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-20 14:54:40 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250120_q_250109_QnA_direct_woman_2.json
+2025-01-20 14:54:51 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 14:54:51 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-20 14:54:57 KST - INFO - 'dense_api_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-20 14:55:01 KST - INFO - 'dense_api_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-20 14:55:01 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250120_q_250109_QnA_direct_woman_2.json
+2025-01-20 15:12:41 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 15:12:41 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-20 15:12:41 KST - INFO - 중복된 키 'dense_api_full_page_no_reranker'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-20 15:12:41 KST - INFO - 중복된 키 'dense_api_full_page_no_reranker'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-20 15:12:41 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250120_q_250109_QnA_direct_woman_2.json
+2025-01-20 16:08:15 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-20 16:09:16 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-20 16:09:16 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-20 16:09:16 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-20 16:09:16 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250120_q_250109_QnA_direct_woman_2.json
+2025-01-21 10:03:33 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-21 10:03:33 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-21 10:03:35 KST - INFO - 새 질문 번호 1의 결과를 저장했습니다.
+2025-01-21 10:03:36 KST - INFO - 새 질문 번호 2의 결과를 저장했습니다.
+2025-01-21 10:03:36 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_250109_QnA_direct_woman_2.json
+2025-01-21 10:04:29 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-21 10:04:29 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 10:04:29 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-21 10:04:29 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-21 10:04:29 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_250109_QnA_direct_woman_2.json
+2025-01-21 10:04:55 KST - INFO - 'answer_pages' 컬럼에서 2개의 정답페이지를 가져왔습니다.
+2025-01-21 10:05:15 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 10:05:16 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-21 10:05:18 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-21 10:05:18 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_250109_QnA_direct_woman_2.json
+2025-01-21 10:56:11 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 10:57:16 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-21 10:57:17 KST - INFO - 새 질문 번호 1의 결과를 저장했습니다.
+2025-01-21 10:57:18 KST - INFO - 새 질문 번호 2의 결과를 저장했습니다.
+2025-01-21 10:57:19 KST - INFO - 새 질문 번호 3의 결과를 저장했습니다.
+2025-01-21 10:57:20 KST - INFO - 새 질문 번호 4의 결과를 저장했습니다.
+2025-01-21 10:57:23 KST - INFO - 새 질문 번호 5의 결과를 저장했습니다.
+2025-01-21 10:57:25 KST - INFO - 새 질문 번호 6의 결과를 저장했습니다.
+2025-01-21 10:57:26 KST - INFO - 새 질문 번호 7의 결과를 저장했습니다.
+2025-01-21 10:57:27 KST - INFO - 새 질문 번호 8의 결과를 저장했습니다.
+2025-01-21 10:57:29 KST - INFO - 새 질문 번호 9의 결과를 저장했습니다.
+2025-01-21 10:57:35 KST - INFO - 새 질문 번호 10의 결과를 저장했습니다.
+2025-01-21 10:57:35 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:24:22 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:25:37 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:25:37 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-21 17:25:37 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-21 17:25:37 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 3에 이미 존재합니다. 추가하지 않습니다.
+2025-01-21 17:25:37 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 4에 이미 존재합니다. 추가하지 않습니다.
+2025-01-21 17:25:37 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 5에 이미 존재합니다. 추가하지 않습니다.
+2025-01-21 17:25:37 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 6에 이미 존재합니다. 추가하지 않습니다.
+2025-01-21 17:25:37 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 7에 이미 존재합니다. 추가하지 않습니다.
+2025-01-21 17:25:37 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 8에 이미 존재합니다. 추가하지 않습니다.
+2025-01-21 17:25:37 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 9에 이미 존재합니다. 추가하지 않습니다.
+2025-01-21 17:25:37 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 10에 이미 존재합니다. 추가하지 않습니다.
+2025-01-21 17:25:37 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:26:49 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:26:53 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-21 17:26:55 KST - INFO - 새 질문 번호 1의 결과를 저장했습니다.
+2025-01-21 17:26:57 KST - INFO - 새 질문 번호 2의 결과를 저장했습니다.
+2025-01-21 17:26:59 KST - INFO - 새 질문 번호 3의 결과를 저장했습니다.
+2025-01-21 17:27:01 KST - INFO - 새 질문 번호 4의 결과를 저장했습니다.
+2025-01-21 17:27:03 KST - INFO - 새 질문 번호 5의 결과를 저장했습니다.
+2025-01-21 17:27:05 KST - INFO - 새 질문 번호 6의 결과를 저장했습니다.
+2025-01-21 17:27:07 KST - INFO - 새 질문 번호 7의 결과를 저장했습니다.
+2025-01-21 17:27:08 KST - INFO - 새 질문 번호 8의 결과를 저장했습니다.
+2025-01-21 17:27:10 KST - INFO - 새 질문 번호 9의 결과를 저장했습니다.
+2025-01-21 17:27:15 KST - INFO - 새 질문 번호 10의 결과를 저장했습니다.
+2025-01-21 17:27:15 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:33:37 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:33:57 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-21 17:34:00 KST - INFO - 새 질문 번호 1의 결과를 저장했습니다.
+2025-01-21 17:34:04 KST - INFO - 새 질문 번호 2의 결과를 저장했습니다.
+2025-01-21 17:34:07 KST - INFO - 새 질문 번호 3의 결과를 저장했습니다.
+2025-01-21 17:34:08 KST - INFO - 새 질문 번호 4의 결과를 저장했습니다.
+2025-01-21 17:34:11 KST - INFO - 새 질문 번호 5의 결과를 저장했습니다.
+2025-01-21 17:34:14 KST - INFO - 새 질문 번호 6의 결과를 저장했습니다.
+2025-01-21 17:34:16 KST - INFO - 새 질문 번호 7의 결과를 저장했습니다.
+2025-01-21 17:34:18 KST - INFO - 새 질문 번호 8의 결과를 저장했습니다.
+2025-01-21 17:34:20 KST - INFO - 새 질문 번호 9의 결과를 저장했습니다.
+2025-01-21 17:34:24 KST - INFO - 새 질문 번호 10의 결과를 저장했습니다.
+2025-01-21 17:34:24 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:34:31 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:34:35 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:34:37 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-21 17:34:39 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-21 17:34:42 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-21 17:34:44 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-21 17:34:46 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-21 17:34:48 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-21 17:34:49 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-21 17:34:51 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-21 17:34:54 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-21 17:34:58 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-21 17:34:58 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:35:05 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:35:07 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:35:08 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-21 17:35:11 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-21 17:35:14 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-21 17:35:15 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-21 17:35:18 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-21 17:35:21 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-21 17:35:22 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-21 17:35:23 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-21 17:35:25 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-21 17:35:27 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-21 17:35:27 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:35:34 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:35:34 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:35:35 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-21 17:35:39 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-21 17:35:44 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-21 17:35:46 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-21 17:35:50 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-21 17:35:53 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-21 17:35:54 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-21 17:35:55 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-21 17:35:57 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-21 17:36:00 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-21 17:36:00 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:36:06 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:36:12 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:36:14 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-21 17:36:16 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-21 17:36:20 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-21 17:36:22 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-21 17:36:25 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-21 17:36:28 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-21 17:36:29 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-21 17:36:32 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-21 17:36:35 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-21 17:36:36 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-21 17:36:36 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:36:43 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:36:47 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:36:49 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-21 17:36:51 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-21 17:36:55 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-21 17:36:56 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-21 17:37:11 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-21 17:37:14 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-21 17:37:15 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-21 17:37:24 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-21 17:37:29 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-21 17:37:37 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-21 17:37:37 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:37:44 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:37:46 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:37:48 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-21 17:37:49 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-21 17:37:52 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-21 17:37:54 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-21 17:37:56 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-21 17:37:58 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-21 17:38:04 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-21 17:38:06 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-21 17:38:08 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-21 17:38:15 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-21 17:38:15 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:38:22 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:38:22 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:38:23 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-21 17:38:25 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-21 17:38:28 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-21 17:38:29 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-21 17:38:31 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-21 17:38:34 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-21 17:38:36 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-21 17:38:37 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-21 17:39:33 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:39:38 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-21 17:39:41 KST - INFO - 새 질문 번호 1의 결과를 저장했습니다.
+2025-01-21 17:39:44 KST - INFO - 새 질문 번호 2의 결과를 저장했습니다.
+2025-01-21 17:39:45 KST - INFO - 새 질문 번호 3의 결과를 저장했습니다.
+2025-01-21 17:39:48 KST - INFO - 새 질문 번호 4의 결과를 저장했습니다.
+2025-01-21 17:39:50 KST - INFO - 새 질문 번호 5의 결과를 저장했습니다.
+2025-01-21 17:39:52 KST - INFO - 새 질문 번호 6의 결과를 저장했습니다.
+2025-01-21 17:39:54 KST - INFO - 새 질문 번호 7의 결과를 저장했습니다.
+2025-01-21 17:39:56 KST - INFO - 새 질문 번호 8의 결과를 저장했습니다.
+2025-01-21 17:39:58 KST - INFO - 새 질문 번호 9의 결과를 저장했습니다.
+2025-01-21 17:40:00 KST - INFO - 새 질문 번호 10의 결과를 저장했습니다.
+2025-01-21 17:40:00 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:40:07 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:40:11 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:40:12 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-21 17:40:14 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-21 17:40:17 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-21 17:40:19 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-21 17:40:21 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-21 17:40:24 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-21 17:40:25 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-21 17:40:27 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-21 17:40:29 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-21 17:40:33 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-21 17:40:33 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:40:40 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:40:42 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:40:44 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-21 17:40:47 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-21 17:40:50 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-21 17:40:51 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-21 17:40:54 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-21 17:40:56 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-21 17:40:57 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-21 17:40:58 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-21 17:41:05 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-21 17:41:10 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-21 17:41:10 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:41:16 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:41:17 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:41:18 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-21 17:41:21 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-21 17:41:24 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-21 17:41:25 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-21 17:41:27 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-21 17:41:29 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-21 17:41:30 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-21 17:41:31 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-21 17:41:33 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-21 17:41:36 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-21 17:41:36 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:41:43 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:41:48 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:41:50 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-21 17:41:53 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-21 17:42:00 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-21 17:42:01 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-21 17:42:05 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-21 17:42:12 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-21 17:42:13 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-21 17:42:15 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-21 17:42:19 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-21 17:42:20 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-21 17:42:20 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:42:27 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:42:30 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:42:32 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-21 17:42:35 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-21 17:42:37 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-21 17:42:39 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-21 17:42:50 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-21 17:42:53 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-21 17:42:54 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-21 17:42:56 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-21 17:42:58 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-21 17:43:05 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-21 17:43:05 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:43:11 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:43:13 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:43:16 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-21 17:43:19 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-21 17:43:22 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-21 17:43:23 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-21 17:43:25 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-21 17:43:27 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-21 17:43:29 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-21 17:43:30 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-21 17:43:33 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-21 17:43:41 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-21 17:43:41 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-21 17:43:48 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-21 17:43:48 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-21 17:43:49 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-21 17:43:51 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-21 17:43:57 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-21 17:43:58 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-21 17:44:01 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-21 17:44:03 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-21 17:44:06 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-21 17:44:07 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-21 17:44:09 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-21 17:44:19 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-21 17:44:19 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250121_q_QnA_car_sample_10.json
+2025-01-22 14:28:55 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-22 14:29:02 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-22 14:30:36 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-22 14:30:42 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-22 14:30:58 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-22 14:31:35 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-22 14:32:11 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-22 17:02:51 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-22 17:03:28 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-22 17:04:04 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-22 17:04:35 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-22 17:04:49 KST - INFO - 새 질문 번호 1의 결과를 저장했습니다.
+2025-01-22 17:04:51 KST - INFO - 새 질문 번호 2의 결과를 저장했습니다.
+2025-01-22 17:04:53 KST - INFO - 새 질문 번호 3의 결과를 저장했습니다.
+2025-01-22 17:04:54 KST - INFO - 새 질문 번호 4의 결과를 저장했습니다.
+2025-01-22 17:04:56 KST - INFO - 새 질문 번호 5의 결과를 저장했습니다.
+2025-01-22 17:04:58 KST - INFO - 새 질문 번호 6의 결과를 저장했습니다.
+2025-01-22 17:04:59 KST - INFO - 새 질문 번호 7의 결과를 저장했습니다.
+2025-01-22 17:05:00 KST - INFO - 새 질문 번호 8의 결과를 저장했습니다.
+2025-01-22 17:05:01 KST - INFO - 새 질문 번호 9의 결과를 저장했습니다.
+2025-01-22 17:05:04 KST - INFO - 새 질문 번호 10의 결과를 저장했습니다.
+2025-01-22 17:05:04 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250122_q_QnA_car_sample_10.json
+2025-01-22 17:05:11 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-22 17:05:13 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-22 17:05:15 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_5'가 질문 번호 1에 추가되었습니다.
+2025-01-22 17:05:17 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_5'가 질문 번호 2에 추가되었습니다.
+2025-01-22 17:05:19 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_5'가 질문 번호 3에 추가되었습니다.
+2025-01-22 17:05:20 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_5'가 질문 번호 4에 추가되었습니다.
+2025-01-22 17:05:22 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_5'가 질문 번호 5에 추가되었습니다.
+2025-01-22 17:05:24 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_5'가 질문 번호 6에 추가되었습니다.
+2025-01-22 17:05:28 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_5'가 질문 번호 7에 추가되었습니다.
+2025-01-22 17:05:33 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_5'가 질문 번호 8에 추가되었습니다.
+2025-01-22 17:05:35 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_5'가 질문 번호 9에 추가되었습니다.
+2025-01-22 17:05:37 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_5'가 질문 번호 10에 추가되었습니다.
+2025-01-22 17:05:37 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250122_q_QnA_car_sample_10.json
+2025-01-22 17:05:44 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-22 17:05:50 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-22 17:05:52 KST - INFO - 'dense_sts_full_page_rerank_5'가 질문 번호 1에 추가되었습니다.
+2025-01-22 17:05:54 KST - INFO - 'dense_sts_full_page_rerank_5'가 질문 번호 2에 추가되었습니다.
+2025-01-22 17:05:57 KST - INFO - 'dense_sts_full_page_rerank_5'가 질문 번호 3에 추가되었습니다.
+2025-01-22 17:05:58 KST - INFO - 'dense_sts_full_page_rerank_5'가 질문 번호 4에 추가되었습니다.
+2025-01-22 17:06:00 KST - INFO - 'dense_sts_full_page_rerank_5'가 질문 번호 5에 추가되었습니다.
+2025-01-22 17:06:02 KST - INFO - 'dense_sts_full_page_rerank_5'가 질문 번호 6에 추가되었습니다.
+2025-01-22 17:06:04 KST - INFO - 'dense_sts_full_page_rerank_5'가 질문 번호 7에 추가되었습니다.
+2025-01-22 17:06:06 KST - INFO - 'dense_sts_full_page_rerank_5'가 질문 번호 8에 추가되었습니다.
+2025-01-22 17:06:07 KST - INFO - 'dense_sts_full_page_rerank_5'가 질문 번호 9에 추가되었습니다.
+2025-01-22 17:06:08 KST - INFO - 'dense_sts_full_page_rerank_5'가 질문 번호 10에 추가되었습니다.
+2025-01-22 17:06:08 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250122_q_QnA_car_sample_10.json
+2025-01-22 17:06:15 KST - INFO - 'answer_pages' 컬럼에서 10개의 정답페이지를 가져왔습니다.
+2025-01-22 17:06:17 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-22 17:06:19 KST - INFO - 'sparse_bm25_full_page_rerank_5'가 질문 번호 1에 추가되었습니다.
+2025-01-22 17:06:21 KST - INFO - 'sparse_bm25_full_page_rerank_5'가 질문 번호 2에 추가되었습니다.
+2025-01-22 17:06:24 KST - INFO - 'sparse_bm25_full_page_rerank_5'가 질문 번호 3에 추가되었습니다.
+2025-01-22 17:06:24 KST - INFO - 'sparse_bm25_full_page_rerank_5'가 질문 번호 4에 추가되었습니다.
+2025-01-22 17:06:26 KST - INFO - 'sparse_bm25_full_page_rerank_5'가 질문 번호 5에 추가되었습니다.
+2025-01-22 17:06:28 KST - INFO - 'sparse_bm25_full_page_rerank_5'가 질문 번호 6에 추가되었습니다.
+2025-01-22 17:06:29 KST - INFO - 'sparse_bm25_full_page_rerank_5'가 질문 번호 7에 추가되었습니다.
+2025-01-22 17:06:31 KST - INFO - 'sparse_bm25_full_page_rerank_5'가 질문 번호 8에 추가되었습니다.
+2025-01-22 17:06:33 KST - INFO - 'sparse_bm25_full_page_rerank_5'가 질문 번호 9에 추가되었습니다.
+2025-01-22 17:06:38 KST - INFO - 'sparse_bm25_full_page_rerank_5'가 질문 번호 10에 추가되었습니다.
+2025-01-22 17:06:38 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250122_q_QnA_car_sample_10.json
+2025-01-23 14:56:58 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 14:57:00 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-23 14:57:48 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 14:57:50 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-23 15:36:16 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:38:07 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:38:40 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-23 15:38:42 KST - INFO - 새 질문 번호 1의 결과를 저장했습니다.
+2025-01-23 15:38:45 KST - INFO - 새 질문 번호 2의 결과를 저장했습니다.
+2025-01-23 15:38:47 KST - INFO - 새 질문 번호 3의 결과를 저장했습니다.
+2025-01-23 15:38:48 KST - INFO - 새 질문 번호 4의 결과를 저장했습니다.
+2025-01-23 15:38:51 KST - INFO - 새 질문 번호 5의 결과를 저장했습니다.
+2025-01-23 15:38:53 KST - INFO - 새 질문 번호 6의 결과를 저장했습니다.
+2025-01-23 15:38:54 KST - INFO - 새 질문 번호 7의 결과를 저장했습니다.
+2025-01-23 15:38:55 KST - INFO - 새 질문 번호 8의 결과를 저장했습니다.
+2025-01-23 15:38:57 KST - INFO - 새 질문 번호 9의 결과를 저장했습니다.
+2025-01-23 15:38:59 KST - INFO - 새 질문 번호 10의 결과를 저장했습니다.
+2025-01-23 15:39:00 KST - INFO - 새 질문 번호 11의 결과를 저장했습니다.
+2025-01-23 15:39:01 KST - INFO - 새 질문 번호 12의 결과를 저장했습니다.
+2025-01-23 15:39:07 KST - INFO - 새 질문 번호 13의 결과를 저장했습니다.
+2025-01-23 15:39:09 KST - INFO - 새 질문 번호 14의 결과를 저장했습니다.
+2025-01-23 15:39:11 KST - INFO - 새 질문 번호 15의 결과를 저장했습니다.
+2025-01-23 15:39:16 KST - INFO - 새 질문 번호 16의 결과를 저장했습니다.
+2025-01-23 15:39:17 KST - INFO - 새 질문 번호 17의 결과를 저장했습니다.
+2025-01-23 15:39:20 KST - INFO - 새 질문 번호 18의 결과를 저장했습니다.
+2025-01-23 15:39:21 KST - INFO - 새 질문 번호 19의 결과를 저장했습니다.
+2025-01-23 15:39:23 KST - INFO - 새 질문 번호 20의 결과를 저장했습니다.
+2025-01-23 15:39:25 KST - INFO - 새 질문 번호 21의 결과를 저장했습니다.
+2025-01-23 15:39:32 KST - INFO - 새 질문 번호 22의 결과를 저장했습니다.
+2025-01-23 15:39:34 KST - INFO - 새 질문 번호 23의 결과를 저장했습니다.
+2025-01-23 15:39:37 KST - INFO - 새 질문 번호 24의 결과를 저장했습니다.
+2025-01-23 15:39:38 KST - INFO - 새 질문 번호 25의 결과를 저장했습니다.
+2025-01-23 15:39:40 KST - INFO - 새 질문 번호 26의 결과를 저장했습니다.
+2025-01-23 15:39:42 KST - INFO - 새 질문 번호 27의 결과를 저장했습니다.
+2025-01-23 15:39:44 KST - INFO - 새 질문 번호 28의 결과를 저장했습니다.
+2025-01-23 15:39:47 KST - INFO - 새 질문 번호 29의 결과를 저장했습니다.
+2025-01-23 15:39:48 KST - INFO - 새 질문 번호 30의 결과를 저장했습니다.
+2025-01-23 15:39:48 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250123_q_QnA_car_sample_30.json
+2025-01-23 15:39:55 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:39:59 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-23 15:40:05 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-23 15:40:07 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-23 15:40:08 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-23 15:40:10 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-23 15:40:12 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-23 15:40:13 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-23 15:40:14 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-23 15:40:15 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-23 15:40:16 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-23 15:40:18 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-23 15:40:19 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 11에 추가되었습니다.
+2025-01-23 15:40:20 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 12에 추가되었습니다.
+2025-01-23 15:40:22 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 13에 추가되었습니다.
+2025-01-23 15:40:58 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:41:03 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-23 15:41:05 KST - INFO - 새 질문 번호 1의 결과를 저장했습니다.
+2025-01-23 15:41:06 KST - INFO - 새 질문 번호 2의 결과를 저장했습니다.
+2025-01-23 15:41:07 KST - INFO - 새 질문 번호 3의 결과를 저장했습니다.
+2025-01-23 15:41:09 KST - INFO - 새 질문 번호 4의 결과를 저장했습니다.
+2025-01-23 15:41:11 KST - INFO - 새 질문 번호 5의 결과를 저장했습니다.
+2025-01-23 15:41:16 KST - INFO - 새 질문 번호 6의 결과를 저장했습니다.
+2025-01-23 15:41:17 KST - INFO - 새 질문 번호 7의 결과를 저장했습니다.
+2025-01-23 15:41:19 KST - INFO - 새 질문 번호 8의 결과를 저장했습니다.
+2025-01-23 15:41:22 KST - INFO - 새 질문 번호 9의 결과를 저장했습니다.
+2025-01-23 15:41:25 KST - INFO - 새 질문 번호 10의 결과를 저장했습니다.
+2025-01-23 15:41:26 KST - INFO - 새 질문 번호 11의 결과를 저장했습니다.
+2025-01-23 15:41:29 KST - INFO - 새 질문 번호 12의 결과를 저장했습니다.
+2025-01-23 15:41:31 KST - INFO - 새 질문 번호 13의 결과를 저장했습니다.
+2025-01-23 15:41:32 KST - INFO - 새 질문 번호 14의 결과를 저장했습니다.
+2025-01-23 15:41:40 KST - INFO - 새 질문 번호 15의 결과를 저장했습니다.
+2025-01-23 15:41:42 KST - INFO - 새 질문 번호 16의 결과를 저장했습니다.
+2025-01-23 15:41:46 KST - INFO - 새 질문 번호 17의 결과를 저장했습니다.
+2025-01-23 15:41:47 KST - INFO - 새 질문 번호 18의 결과를 저장했습니다.
+2025-01-23 15:41:49 KST - INFO - 새 질문 번호 19의 결과를 저장했습니다.
+2025-01-23 15:41:52 KST - INFO - 새 질문 번호 20의 결과를 저장했습니다.
+2025-01-23 15:41:53 KST - INFO - 새 질문 번호 21의 결과를 저장했습니다.
+2025-01-23 15:41:55 KST - INFO - 새 질문 번호 22의 결과를 저장했습니다.
+2025-01-23 15:41:57 KST - INFO - 새 질문 번호 23의 결과를 저장했습니다.
+2025-01-23 15:41:59 KST - INFO - 새 질문 번호 24의 결과를 저장했습니다.
+2025-01-23 15:42:01 KST - INFO - 새 질문 번호 25의 결과를 저장했습니다.
+2025-01-23 15:42:03 KST - INFO - 새 질문 번호 26의 결과를 저장했습니다.
+2025-01-23 15:42:06 KST - INFO - 새 질문 번호 27의 결과를 저장했습니다.
+2025-01-23 15:42:08 KST - INFO - 새 질문 번호 28의 결과를 저장했습니다.
+2025-01-23 15:42:12 KST - INFO - 새 질문 번호 29의 결과를 저장했습니다.
+2025-01-23 15:42:18 KST - INFO - 새 질문 번호 30의 결과를 저장했습니다.
+2025-01-23 15:42:18 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250123_q_QnA_car_sample_30.json
+2025-01-23 15:42:25 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:42:28 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-23 15:42:30 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-23 15:42:31 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-23 15:42:33 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-23 15:42:35 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-23 15:42:37 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-23 15:42:39 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-23 15:42:40 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-23 15:42:41 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-23 15:42:43 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-23 15:42:44 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-23 15:42:45 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 11에 추가되었습니다.
+2025-01-23 15:42:46 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 12에 추가되었습니다.
+2025-01-23 15:42:54 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 13에 추가되었습니다.
+2025-01-23 15:42:56 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 14에 추가되었습니다.
+2025-01-23 15:42:59 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 15에 추가되었습니다.
+2025-01-23 15:43:02 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 16에 추가되었습니다.
+2025-01-23 15:43:03 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 17에 추가되었습니다.
+2025-01-23 15:43:04 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 18에 추가되었습니다.
+2025-01-23 15:43:06 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 19에 추가되었습니다.
+2025-01-23 15:43:07 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 20에 추가되었습니다.
+2025-01-23 15:43:09 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 21에 추가되었습니다.
+2025-01-23 15:43:14 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 22에 추가되었습니다.
+2025-01-23 15:43:16 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 23에 추가되었습니다.
+2025-01-23 15:43:18 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 24에 추가되었습니다.
+2025-01-23 15:43:20 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 25에 추가되었습니다.
+2025-01-23 15:43:21 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 26에 추가되었습니다.
+2025-01-23 15:43:24 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 27에 추가되었습니다.
+2025-01-23 15:43:25 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 28에 추가되었습니다.
+2025-01-23 15:43:27 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 29에 추가되었습니다.
+2025-01-23 15:43:31 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 30에 추가되었습니다.
+2025-01-23 15:43:31 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250123_q_QnA_car_sample_30.json
+2025-01-23 15:43:37 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:43:39 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-23 15:43:41 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-23 15:43:42 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-23 15:43:44 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-23 15:43:45 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-23 15:43:46 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-23 15:43:47 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-23 15:43:48 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-23 15:43:49 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-23 15:43:50 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-23 15:43:53 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-23 15:43:55 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 11에 추가되었습니다.
+2025-01-23 15:43:57 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 12에 추가되었습니다.
+2025-01-23 15:43:58 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 13에 추가되었습니다.
+2025-01-23 15:44:01 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 14에 추가되었습니다.
+2025-01-23 15:44:02 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 15에 추가되었습니다.
+2025-01-23 15:44:03 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 16에 추가되었습니다.
+2025-01-23 15:44:04 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 17에 추가되었습니다.
+2025-01-23 15:44:05 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 18에 추가되었습니다.
+2025-01-23 15:44:07 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 19에 추가되었습니다.
+2025-01-23 15:44:08 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 20에 추가되었습니다.
+2025-01-23 15:44:12 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 21에 추가되었습니다.
+2025-01-23 15:44:13 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 22에 추가되었습니다.
+2025-01-23 15:44:17 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 23에 추가되었습니다.
+2025-01-23 15:44:18 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 24에 추가되었습니다.
+2025-01-23 15:44:19 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 25에 추가되었습니다.
+2025-01-23 15:44:21 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 26에 추가되었습니다.
+2025-01-23 15:44:22 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 27에 추가되었습니다.
+2025-01-23 15:44:24 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 28에 추가되었습니다.
+2025-01-23 15:44:26 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 29에 추가되었습니다.
+2025-01-23 15:44:27 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 30에 추가되었습니다.
+2025-01-23 15:44:27 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250123_q_QnA_car_sample_30.json
+2025-01-23 15:44:34 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:44:34 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-23 15:44:35 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-23 15:44:37 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-23 15:44:40 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-23 15:44:41 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-23 15:44:42 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-23 15:44:43 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-23 15:45:35 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:45:40 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 3에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 4에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 5에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 6에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 7에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 8에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 9에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 10에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 11에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 12에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 13에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 14에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 15에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 16에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 17에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 18에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 19에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 20에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 21에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 22에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 23에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 24에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 25에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 26에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 27에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 28에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 29에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 30에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:40 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250123_q_QnA_car_sample_30.json
+2025-01-23 15:45:47 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:45:51 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 3에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 4에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 5에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 6에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 7에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 8에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 9에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 10에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 11에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 12에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 13에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 14에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 15에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 16에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 17에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 18에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 19에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 20에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 21에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 22에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 23에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 24에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 25에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 26에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 27에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 28에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 29에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 30에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:45:51 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250123_q_QnA_car_sample_30.json
+2025-01-23 15:45:57 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:46:00 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 3에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 4에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 5에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 6에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 7에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 8에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 9에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 10에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 11에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 12에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 13에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 14에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 15에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 16에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 17에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 18에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 19에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 20에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 21에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 22에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 23에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 24에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 25에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 26에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 27에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 28에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 29에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 30에 이미 존재합니다. 추가하지 않습니다.
+2025-01-23 15:46:00 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250123_q_QnA_car_sample_30.json
+2025-01-23 15:46:06 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:46:06 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-23 15:46:09 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-23 15:46:11 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-23 15:46:16 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-23 15:46:17 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-23 15:46:20 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-23 15:46:22 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-23 15:46:23 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-23 15:46:24 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-23 15:46:27 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-23 15:46:30 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-23 15:46:31 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 11에 추가되었습니다.
+2025-01-23 15:46:33 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 12에 추가되었습니다.
+2025-01-23 15:46:36 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 13에 추가되었습니다.
+2025-01-23 15:46:38 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 14에 추가되었습니다.
+2025-01-23 15:46:39 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 15에 추가되었습니다.
+2025-01-23 15:46:39 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 16에 추가되었습니다.
+2025-01-23 15:46:40 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 17에 추가되었습니다.
+2025-01-23 15:46:41 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 18에 추가되었습니다.
+2025-01-23 15:46:42 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 19에 추가되었습니다.
+2025-01-23 15:46:44 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 20에 추가되었습니다.
+2025-01-23 15:46:46 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 21에 추가되었습니다.
+2025-01-23 15:46:47 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 22에 추가되었습니다.
+2025-01-23 15:46:53 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 23에 추가되었습니다.
+2025-01-23 15:46:54 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 24에 추가되었습니다.
+2025-01-23 15:46:55 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 25에 추가되었습니다.
+2025-01-23 15:46:58 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 26에 추가되었습니다.
+2025-01-23 15:46:59 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 27에 추가되었습니다.
+2025-01-23 15:47:00 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 28에 추가되었습니다.
+2025-01-23 15:47:01 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 29에 추가되었습니다.
+2025-01-23 15:47:03 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 30에 추가되었습니다.
+2025-01-23 15:47:03 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250123_q_QnA_car_sample_30.json
+2025-01-23 15:47:09 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:47:15 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-23 15:47:17 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-23 15:47:24 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-23 15:47:28 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-23 15:47:29 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-23 15:47:32 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-23 15:47:33 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-23 15:47:36 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-23 15:47:37 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-23 15:47:39 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-23 15:47:39 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-23 15:47:41 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 11에 추가되었습니다.
+2025-01-23 15:47:43 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 12에 추가되었습니다.
+2025-01-23 15:47:44 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 13에 추가되었습니다.
+2025-01-23 15:47:47 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 14에 추가되었습니다.
+2025-01-23 15:47:49 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 15에 추가되었습니다.
+2025-01-23 15:47:52 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 16에 추가되었습니다.
+2025-01-23 15:47:53 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 17에 추가되었습니다.
+2025-01-23 15:47:54 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 18에 추가되었습니다.
+2025-01-23 15:47:56 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 19에 추가되었습니다.
+2025-01-23 15:47:58 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 20에 추가되었습니다.
+2025-01-23 15:48:04 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 21에 추가되었습니다.
+2025-01-23 15:48:07 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 22에 추가되었습니다.
+2025-01-23 15:48:13 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 23에 추가되었습니다.
+2025-01-23 15:48:15 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 24에 추가되었습니다.
+2025-01-23 15:48:16 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 25에 추가되었습니다.
+2025-01-23 15:48:20 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 26에 추가되었습니다.
+2025-01-23 15:48:22 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 27에 추가되었습니다.
+2025-01-23 15:48:24 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 28에 추가되었습니다.
+2025-01-23 15:48:27 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 29에 추가되었습니다.
+2025-01-23 15:48:31 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 30에 추가되었습니다.
+2025-01-23 15:48:31 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250123_q_QnA_car_sample_30.json
+2025-01-23 15:48:37 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:48:41 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-23 15:48:43 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-23 15:48:45 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-23 15:48:48 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-23 15:48:49 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-23 15:48:53 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-23 15:48:54 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-23 15:48:55 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-23 15:48:56 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-23 15:48:58 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-23 15:49:02 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-23 15:49:03 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 11에 추가되었습니다.
+2025-01-23 15:49:05 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 12에 추가되었습니다.
+2025-01-23 15:49:07 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 13에 추가되었습니다.
+2025-01-23 15:49:10 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 14에 추가되었습니다.
+2025-01-23 15:49:13 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 15에 추가되었습니다.
+2025-01-23 15:49:14 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 16에 추가되었습니다.
+2025-01-23 15:49:15 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 17에 추가되었습니다.
+2025-01-23 15:49:16 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 18에 추가되었습니다.
+2025-01-23 15:49:19 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 19에 추가되었습니다.
+2025-01-23 15:49:22 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 20에 추가되었습니다.
+2025-01-23 15:49:24 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 21에 추가되었습니다.
+2025-01-23 15:49:27 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 22에 추가되었습니다.
+2025-01-23 15:49:31 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 23에 추가되었습니다.
+2025-01-23 15:49:34 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 24에 추가되었습니다.
+2025-01-23 15:49:35 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 25에 추가되었습니다.
+2025-01-23 15:49:37 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 26에 추가되었습니다.
+2025-01-23 15:49:39 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 27에 추가되었습니다.
+2025-01-23 15:49:42 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 28에 추가되었습니다.
+2025-01-23 15:49:44 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 29에 추가되었습니다.
+2025-01-23 15:49:47 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 30에 추가되었습니다.
+2025-01-23 15:49:47 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250123_q_QnA_car_sample_30.json
+2025-01-23 15:49:54 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:49:56 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-23 15:49:58 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-23 15:50:01 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-23 15:50:02 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-23 15:50:05 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-23 15:50:07 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-23 15:50:08 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-23 15:50:10 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-23 15:50:12 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-23 15:50:14 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-23 15:50:17 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-23 15:50:19 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 11에 추가되었습니다.
+2025-01-23 15:50:21 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 12에 추가되었습니다.
+2025-01-23 15:50:24 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 13에 추가되었습니다.
+2025-01-23 15:50:27 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 14에 추가되었습니다.
+2025-01-23 15:50:30 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 15에 추가되었습니다.
+2025-01-23 15:50:31 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 16에 추가되었습니다.
+2025-01-23 15:50:32 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 17에 추가되었습니다.
+2025-01-23 15:50:34 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 18에 추가되었습니다.
+2025-01-23 15:50:39 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 19에 추가되었습니다.
+2025-01-23 15:50:41 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 20에 추가되었습니다.
+2025-01-23 15:50:43 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 21에 추가되었습니다.
+2025-01-23 15:50:45 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 22에 추가되었습니다.
+2025-01-23 15:50:47 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 23에 추가되었습니다.
+2025-01-23 15:50:52 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 24에 추가되었습니다.
+2025-01-23 15:50:53 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 25에 추가되었습니다.
+2025-01-23 15:50:54 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 26에 추가되었습니다.
+2025-01-23 15:50:55 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 27에 추가되었습니다.
+2025-01-23 15:50:59 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 28에 추가되었습니다.
+2025-01-23 15:51:00 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 29에 추가되었습니다.
+2025-01-23 15:51:02 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 30에 추가되었습니다.
+2025-01-23 15:51:02 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250123_q_QnA_car_sample_30.json
+2025-01-23 15:51:09 KST - INFO - 'answer_pages' 컬럼에서 30개의 정답페이지를 가져왔습니다.
+2025-01-23 15:51:09 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-23 15:51:10 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-23 15:51:12 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-23 15:51:14 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-23 15:51:16 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-23 15:51:18 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-23 15:51:20 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-23 15:51:21 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-23 15:51:22 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-23 15:51:24 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-23 15:51:29 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-23 15:51:30 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 11에 추가되었습니다.
+2025-01-23 15:51:32 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 12에 추가되었습니다.
+2025-01-23 15:51:41 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 13에 추가되었습니다.
+2025-01-23 15:51:42 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 14에 추가되었습니다.
+2025-01-23 15:51:45 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 15에 추가되었습니다.
+2025-01-23 15:51:46 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 16에 추가되었습니다.
+2025-01-23 15:51:49 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 17에 추가되었습니다.
+2025-01-23 15:51:50 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 18에 추가되었습니다.
+2025-01-23 15:51:51 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 19에 추가되었습니다.
+2025-01-23 15:51:53 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 20에 추가되었습니다.
+2025-01-23 15:51:54 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 21에 추가되었습니다.
+2025-01-23 15:51:56 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 22에 추가되었습니다.
+2025-01-23 15:51:57 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 23에 추가되었습니다.
+2025-01-23 15:51:58 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 24에 추가되었습니다.
+2025-01-23 15:52:00 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 25에 추가되었습니다.
+2025-01-23 15:52:03 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 26에 추가되었습니다.
+2025-01-23 15:52:04 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 27에 추가되었습니다.
+2025-01-23 15:52:06 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 28에 추가되었습니다.
+2025-01-23 15:52:08 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 29에 추가되었습니다.
+2025-01-23 15:52:12 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 30에 추가되었습니다.
+2025-01-23 15:52:12 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250123_q_QnA_car_sample_30.json
+2025-01-24 10:53:56 KST - INFO - 'answer_pages' 컬럼에서 15개의 정답페이지를 가져왔습니다.
+2025-01-24 10:54:22 KST - INFO - 'answer_pages' 컬럼에서 15개의 정답페이지를 가져왔습니다.
+2025-01-24 10:54:22 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-24 10:54:24 KST - INFO - 새 질문 번호 1의 결과를 저장했습니다.
+2025-01-24 10:54:25 KST - INFO - 새 질문 번호 2의 결과를 저장했습니다.
+2025-01-24 10:54:26 KST - INFO - 새 질문 번호 3의 결과를 저장했습니다.
+2025-01-24 10:54:28 KST - INFO - 새 질문 번호 4의 결과를 저장했습니다.
+2025-01-24 10:54:30 KST - INFO - 새 질문 번호 5의 결과를 저장했습니다.
+2025-01-24 10:54:31 KST - INFO - 새 질문 번호 6의 결과를 저장했습니다.
+2025-01-24 10:54:32 KST - INFO - 새 질문 번호 7의 결과를 저장했습니다.
+2025-01-24 10:54:33 KST - INFO - 새 질문 번호 8의 결과를 저장했습니다.
+2025-01-24 10:54:35 KST - INFO - 새 질문 번호 9의 결과를 저장했습니다.
+2025-01-24 10:54:36 KST - INFO - 새 질문 번호 10의 결과를 저장했습니다.
+2025-01-24 10:54:37 KST - INFO - 새 질문 번호 11의 결과를 저장했습니다.
+2025-01-24 10:54:39 KST - INFO - 새 질문 번호 12의 결과를 저장했습니다.
+2025-01-24 10:54:41 KST - INFO - 새 질문 번호 13의 결과를 저장했습니다.
+2025-01-24 10:54:42 KST - INFO - 새 질문 번호 14의 결과를 저장했습니다.
+2025-01-24 10:54:44 KST - INFO - 새 질문 번호 15의 결과를 저장했습니다.
+2025-01-24 10:54:44 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250124_q_QnA_car_sample_15_context_labeling_preprocessed.json
+2025-01-24 11:01:00 KST - INFO - 'answer_pages' 컬럼에서 15개의 정답페이지를 가져왔습니다.
+2025-01-24 11:01:03 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-24 11:01:11 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-24 11:01:13 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-24 11:01:14 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-24 11:01:14 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-24 11:01:15 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-24 11:01:17 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-24 11:01:18 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-24 11:01:20 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-24 11:01:21 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-24 11:01:23 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-24 11:01:24 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 11에 추가되었습니다.
+2025-01-24 11:01:25 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 12에 추가되었습니다.
+2025-01-24 11:01:26 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 13에 추가되었습니다.
+2025-01-24 11:01:29 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 14에 추가되었습니다.
+2025-01-24 11:01:29 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 15에 추가되었습니다.
+2025-01-24 11:01:29 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250124_q_QnA_car_sample_15_context_labeling_preprocessed.json
+2025-01-24 11:02:16 KST - INFO - 'answer_pages' 컬럼에서 15개의 정답페이지를 가져왔습니다.
+2025-01-24 11:02:38 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-24 11:02:39 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-24 11:02:41 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-24 11:02:42 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-24 11:02:43 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-24 11:02:45 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-24 11:02:47 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-24 11:02:48 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-24 11:02:49 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-24 11:02:50 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-24 11:02:51 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-24 11:02:52 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 11에 추가되었습니다.
+2025-01-24 11:02:53 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 12에 추가되었습니다.
+2025-01-24 11:02:55 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 13에 추가되었습니다.
+2025-01-24 11:02:57 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 14에 추가되었습니다.
+2025-01-24 11:02:58 KST - INFO - 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 15에 추가되었습니다.
+2025-01-24 11:02:58 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250124_q_QnA_car_sample_15_context_labeling_preprocessed.json
+2025-01-24 17:49:30 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-24 17:49:36 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-24 17:49:37 KST - INFO - 새 질문 번호 1의 결과를 저장했습니다.
+2025-01-24 17:49:42 KST - INFO - 새 질문 번호 2의 결과를 저장했습니다.
+2025-01-24 17:49:44 KST - INFO - 새 질문 번호 3의 결과를 저장했습니다.
+2025-01-24 17:49:46 KST - INFO - 새 질문 번호 4의 결과를 저장했습니다.
+2025-01-24 17:49:48 KST - INFO - 새 질문 번호 5의 결과를 저장했습니다.
+2025-01-24 17:49:49 KST - INFO - 새 질문 번호 6의 결과를 저장했습니다.
+2025-01-24 17:49:50 KST - INFO - 새 질문 번호 7의 결과를 저장했습니다.
+2025-01-24 17:49:51 KST - INFO - 새 질문 번호 8의 결과를 저장했습니다.
+2025-01-24 17:49:52 KST - INFO - 새 질문 번호 9의 결과를 저장했습니다.
+2025-01-24 17:49:54 KST - INFO - 새 질문 번호 10의 결과를 저장했습니다.
+2025-01-24 17:49:55 KST - INFO - 새 질문 번호 11의 결과를 저장했습니다.
+2025-01-24 17:49:57 KST - INFO - 새 질문 번호 12의 결과를 저장했습니다.
+2025-01-24 17:49:59 KST - INFO - 새 질문 번호 13의 결과를 저장했습니다.
+2025-01-24 17:50:02 KST - INFO - 새 질문 번호 14의 결과를 저장했습니다.
+2025-01-24 17:50:03 KST - INFO - 새 질문 번호 15의 결과를 저장했습니다.
+2025-01-24 17:50:04 KST - INFO - 새 질문 번호 16의 결과를 저장했습니다.
+2025-01-24 17:50:06 KST - INFO - 새 질문 번호 17의 결과를 저장했습니다.
+2025-01-24 17:50:07 KST - INFO - 새 질문 번호 18의 결과를 저장했습니다.
+2025-01-24 17:50:10 KST - INFO - 새 질문 번호 19의 결과를 저장했습니다.
+2025-01-24 17:50:12 KST - INFO - 새 질문 번호 20의 결과를 저장했습니다.
+2025-01-24 17:50:14 KST - INFO - 새 질문 번호 21의 결과를 저장했습니다.
+2025-01-24 17:50:15 KST - INFO - 새 질문 번호 22의 결과를 저장했습니다.
+2025-01-24 17:50:17 KST - INFO - 새 질문 번호 23의 결과를 저장했습니다.
+2025-01-24 17:50:18 KST - INFO - 새 질문 번호 24의 결과를 저장했습니다.
+2025-01-24 17:50:20 KST - INFO - 새 질문 번호 26의 결과를 저장했습니다.
+2025-01-24 17:50:21 KST - INFO - 새 질문 번호 27의 결과를 저장했습니다.
+2025-01-24 17:50:23 KST - INFO - 새 질문 번호 28의 결과를 저장했습니다.
+2025-01-24 17:50:26 KST - INFO - 새 질문 번호 29의 결과를 저장했습니다.
+2025-01-24 17:50:27 KST - INFO - 새 질문 번호 30의 결과를 저장했습니다.
+2025-01-24 17:50:27 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250124_q_QnA_car_sample_30_context_labeling_preprocessed.json
+2025-01-24 17:50:34 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-24 17:50:38 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-24 17:50:40 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-24 17:50:41 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-24 17:50:43 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-24 17:50:45 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-24 17:50:46 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-24 17:50:48 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-24 17:50:50 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-24 17:50:51 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-24 17:50:52 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-24 17:50:54 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-24 17:50:55 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 11에 추가되었습니다.
+2025-01-24 17:50:56 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 12에 추가되었습니다.
+2025-01-24 17:50:58 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 13에 추가되었습니다.
+2025-01-24 17:51:00 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 14에 추가되었습니다.
+2025-01-24 17:51:02 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 15에 추가되었습니다.
+2025-01-24 17:51:03 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 16에 추가되었습니다.
+2025-01-24 17:51:05 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 17에 추가되었습니다.
+2025-01-24 17:51:06 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 18에 추가되었습니다.
+2025-01-24 17:51:13 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 19에 추가되었습니다.
+2025-01-24 17:51:15 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 20에 추가되었습니다.
+2025-01-24 17:51:17 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 21에 추가되었습니다.
+2025-01-24 17:51:17 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 22에 추가되었습니다.
+2025-01-24 17:51:20 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 23에 추가되었습니다.
+2025-01-24 17:51:21 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 24에 추가되었습니다.
+2025-01-24 17:51:23 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 26에 추가되었습니다.
+2025-01-24 17:51:25 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 27에 추가되었습니다.
+2025-01-24 17:51:27 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 28에 추가되었습니다.
+2025-01-24 17:51:28 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 29에 추가되었습니다.
+2025-01-24 17:51:31 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 30에 추가되었습니다.
+2025-01-24 17:51:31 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250124_q_QnA_car_sample_30_context_labeling_preprocessed.json
+2025-01-24 17:51:38 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-24 17:51:40 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-24 17:51:42 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-24 17:51:43 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-24 17:51:45 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-24 17:51:46 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-24 17:51:47 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-24 17:51:49 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-24 17:51:50 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-24 17:51:51 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-24 17:51:52 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-24 17:51:54 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-24 17:51:55 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 11에 추가되었습니다.
+2025-01-24 17:51:57 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 12에 추가되었습니다.
+2025-01-24 17:51:58 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 13에 추가되었습니다.
+2025-01-24 17:52:01 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 14에 추가되었습니다.
+2025-01-24 17:52:02 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 15에 추가되었습니다.
+2025-01-24 17:52:05 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 16에 추가되었습니다.
+2025-01-24 17:52:06 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 17에 추가되었습니다.
+2025-01-24 17:52:07 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 18에 추가되었습니다.
+2025-01-24 17:52:10 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 19에 추가되었습니다.
+2025-01-24 17:52:11 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 20에 추가되었습니다.
+2025-01-24 17:52:12 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 21에 추가되었습니다.
+2025-01-24 17:52:13 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 22에 추가되었습니다.
+2025-01-24 17:52:14 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 23에 추가되었습니다.
+2025-01-24 17:52:15 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 24에 추가되었습니다.
+2025-01-24 17:52:16 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 26에 추가되었습니다.
+2025-01-24 17:52:18 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 27에 추가되었습니다.
+2025-01-24 17:52:19 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 28에 추가되었습니다.
+2025-01-24 17:52:19 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 29에 추가되었습니다.
+2025-01-24 17:52:21 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 30에 추가되었습니다.
+2025-01-24 17:52:21 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250124_q_QnA_car_sample_30_context_labeling_preprocessed.json
+2025-01-24 17:52:27 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-24 17:52:28 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-24 17:52:29 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-24 17:52:31 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-24 17:52:32 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-24 17:52:33 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-24 17:52:34 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-24 17:52:37 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-24 17:52:38 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-24 17:52:39 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-24 17:52:40 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-24 17:52:41 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-24 17:52:47 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 11에 추가되었습니다.
+2025-01-24 17:52:49 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 12에 추가되었습니다.
+2025-01-24 17:52:50 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 13에 추가되었습니다.
+2025-01-24 17:52:51 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 14에 추가되었습니다.
+2025-01-24 17:52:52 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 15에 추가되었습니다.
+2025-01-24 17:52:53 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 16에 추가되었습니다.
+2025-01-24 17:52:54 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 17에 추가되었습니다.
+2025-01-24 17:52:55 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 18에 추가되었습니다.
+2025-01-24 17:52:57 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 19에 추가되었습니다.
+2025-01-24 17:52:59 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 20에 추가되었습니다.
+2025-01-24 17:53:00 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 21에 추가되었습니다.
+2025-01-24 17:53:01 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 22에 추가되었습니다.
+2025-01-24 17:53:02 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 23에 추가되었습니다.
+2025-01-24 17:53:03 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 24에 추가되었습니다.
+2025-01-24 17:53:04 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 26에 추가되었습니다.
+2025-01-24 17:53:05 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 27에 추가되었습니다.
+2025-01-24 17:53:06 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 28에 추가되었습니다.
+2025-01-24 17:53:09 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 29에 추가되었습니다.
+2025-01-24 17:53:10 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 30에 추가되었습니다.
+2025-01-24 17:53:10 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250124_q_QnA_car_sample_30_context_labeling_preprocessed.json
+2025-01-24 17:53:16 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-24 17:53:53 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-24 17:53:55 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-24 17:53:58 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-24 17:54:01 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-24 17:54:03 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-24 17:54:07 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-24 17:54:09 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-24 17:54:11 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-24 17:54:12 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-24 17:54:14 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-24 17:54:16 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-24 17:54:17 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 11에 추가되었습니다.
+2025-01-24 17:54:19 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 12에 추가되었습니다.
+2025-01-24 17:54:20 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 13에 추가되었습니다.
+2025-01-24 17:54:23 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 14에 추가되었습니다.
+2025-01-24 17:54:25 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 15에 추가되었습니다.
+2025-01-24 17:54:27 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 16에 추가되었습니다.
+2025-01-24 17:54:29 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 17에 추가되었습니다.
+2025-01-24 17:54:30 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 18에 추가되었습니다.
+2025-01-24 17:54:32 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 19에 추가되었습니다.
+2025-01-24 17:54:36 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 20에 추가되었습니다.
+2025-01-24 17:54:37 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 21에 추가되었습니다.
+2025-01-24 17:54:38 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 22에 추가되었습니다.
+2025-01-24 17:54:40 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 23에 추가되었습니다.
+2025-01-24 17:54:42 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 24에 추가되었습니다.
+2025-01-24 17:54:44 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 26에 추가되었습니다.
+2025-01-24 17:54:46 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 27에 추가되었습니다.
+2025-01-24 17:54:47 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 28에 추가되었습니다.
+2025-01-24 17:54:51 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 29에 추가되었습니다.
+2025-01-24 17:54:53 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 30에 추가되었습니다.
+2025-01-24 17:54:53 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250124_q_QnA_car_sample_30_context_labeling_preprocessed.json
+2025-01-24 17:55:00 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-24 17:55:04 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-24 17:55:06 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-24 17:55:09 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-24 17:55:10 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-24 17:55:11 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-24 17:55:13 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-24 17:55:15 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-24 17:55:16 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-24 17:55:17 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-24 17:55:18 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-24 17:55:20 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-24 17:55:21 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 11에 추가되었습니다.
+2025-01-24 17:55:23 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 12에 추가되었습니다.
+2025-01-24 17:55:24 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 13에 추가되었습니다.
+2025-01-24 17:55:26 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 14에 추가되었습니다.
+2025-01-24 17:55:29 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 15에 추가되었습니다.
+2025-01-24 17:55:31 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 16에 추가되었습니다.
+2025-01-24 17:55:33 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 17에 추가되었습니다.
+2025-01-24 17:55:34 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 18에 추가되었습니다.
+2025-01-24 17:55:37 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 19에 추가되었습니다.
+2025-01-24 17:55:42 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 20에 추가되었습니다.
+2025-01-24 17:55:43 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 21에 추가되었습니다.
+2025-01-24 17:55:45 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 22에 추가되었습니다.
+2025-01-24 17:55:47 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 23에 추가되었습니다.
+2025-01-24 17:55:49 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 24에 추가되었습니다.
+2025-01-24 17:55:51 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 26에 추가되었습니다.
+2025-01-24 17:55:52 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 27에 추가되었습니다.
+2025-01-24 17:55:55 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 28에 추가되었습니다.
+2025-01-24 17:55:56 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 29에 추가되었습니다.
+2025-01-24 17:55:59 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 30에 추가되었습니다.
+2025-01-24 17:55:59 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250124_q_QnA_car_sample_30_context_labeling_preprocessed.json
+2025-01-24 17:56:06 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-24 17:56:08 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-24 17:56:10 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-24 17:56:13 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-24 17:56:14 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-24 17:56:16 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-24 17:56:19 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-24 17:56:21 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-24 17:56:22 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-24 17:56:26 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-24 17:56:28 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-24 17:56:29 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-24 17:56:30 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 11에 추가되었습니다.
+2025-01-24 17:56:32 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 12에 추가되었습니다.
+2025-01-24 17:56:35 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 13에 추가되었습니다.
+2025-01-24 17:56:37 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 14에 추가되었습니다.
+2025-01-24 17:56:39 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 15에 추가되었습니다.
+2025-01-24 17:56:40 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 16에 추가되었습니다.
+2025-01-24 17:56:43 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 17에 추가되었습니다.
+2025-01-24 17:56:44 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 18에 추가되었습니다.
+2025-01-24 17:56:45 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 19에 추가되었습니다.
+2025-01-24 17:56:47 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 20에 추가되었습니다.
+2025-01-24 17:56:48 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 21에 추가되었습니다.
+2025-01-24 17:56:49 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 22에 추가되었습니다.
+2025-01-24 17:56:51 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 23에 추가되었습니다.
+2025-01-24 17:56:52 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 24에 추가되었습니다.
+2025-01-24 17:56:54 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 26에 추가되었습니다.
+2025-01-24 17:56:55 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 27에 추가되었습니다.
+2025-01-24 17:56:58 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 28에 추가되었습니다.
+2025-01-24 17:57:00 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 29에 추가되었습니다.
+2025-01-24 17:57:02 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 30에 추가되었습니다.
+2025-01-24 17:57:02 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250124_q_QnA_car_sample_30_context_labeling_preprocessed.json
+2025-01-24 17:57:09 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-24 17:57:09 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-24 17:57:10 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-24 17:57:17 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-24 17:57:18 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-24 17:57:19 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-24 17:57:22 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-24 17:57:23 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-24 17:57:24 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-24 17:57:25 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-24 17:57:26 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-24 17:57:28 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-24 17:57:29 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 11에 추가되었습니다.
+2025-01-24 17:57:31 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 12에 추가되었습니다.
+2025-01-24 17:57:34 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 13에 추가되었습니다.
+2025-01-24 17:57:36 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 14에 추가되었습니다.
+2025-01-24 17:57:38 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 15에 추가되었습니다.
+2025-01-24 17:57:47 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 16에 추가되었습니다.
+2025-01-24 17:57:48 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 17에 추가되었습니다.
+2025-01-24 17:57:49 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 18에 추가되었습니다.
+2025-01-24 17:57:52 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 19에 추가되었습니다.
+2025-01-24 17:57:55 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 20에 추가되었습니다.
+2025-01-24 17:57:56 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 21에 추가되었습니다.
+2025-01-24 17:57:57 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 22에 추가되었습니다.
+2025-01-24 17:57:59 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 23에 추가되었습니다.
+2025-01-24 17:58:01 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 24에 추가되었습니다.
+2025-01-24 17:58:02 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 26에 추가되었습니다.
+2025-01-24 17:58:04 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 27에 추가되었습니다.
+2025-01-24 17:58:06 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 28에 추가되었습니다.
+2025-01-24 17:58:07 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 29에 추가되었습니다.
+2025-01-24 17:58:11 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 30에 추가되었습니다.
+2025-01-24 17:58:11 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250124_q_QnA_car_sample_30_context_labeling_preprocessed.json
+2025-01-31 09:56:47 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 09:56:54 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 09:57:00 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 09:57:06 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 09:57:12 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 09:57:19 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 09:57:25 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 09:57:31 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 10:04:27 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 10:08:22 KST - INFO - 새로운 결과 파일을 생성합니다.
+2025-01-31 10:08:26 KST - INFO - 새 질문 번호 1의 결과를 저장했습니다.
+2025-01-31 10:08:30 KST - INFO - 새 질문 번호 2의 결과를 저장했습니다.
+2025-01-31 10:08:33 KST - INFO - 새 질문 번호 3의 결과를 저장했습니다.
+2025-01-31 10:08:35 KST - INFO - 새 질문 번호 4의 결과를 저장했습니다.
+2025-01-31 10:08:38 KST - INFO - 새 질문 번호 5의 결과를 저장했습니다.
+2025-01-31 10:08:41 KST - INFO - 새 질문 번호 6의 결과를 저장했습니다.
+2025-01-31 10:08:44 KST - INFO - 새 질문 번호 7의 결과를 저장했습니다.
+2025-01-31 10:08:46 KST - INFO - 새 질문 번호 8의 결과를 저장했습니다.
+2025-01-31 10:08:49 KST - INFO - 새 질문 번호 9의 결과를 저장했습니다.
+2025-01-31 10:08:53 KST - INFO - 새 질문 번호 10의 결과를 저장했습니다.
+2025-01-31 10:08:54 KST - INFO - 새 질문 번호 11의 결과를 저장했습니다.
+2025-01-31 10:08:58 KST - INFO - 새 질문 번호 12의 결과를 저장했습니다.
+2025-01-31 10:09:02 KST - INFO - 새 질문 번호 13의 결과를 저장했습니다.
+2025-01-31 10:09:05 KST - INFO - 새 질문 번호 14의 결과를 저장했습니다.
+2025-01-31 10:09:10 KST - INFO - 새 질문 번호 15의 결과를 저장했습니다.
+2025-01-31 10:09:12 KST - INFO - 새 질문 번호 16의 결과를 저장했습니다.
+2025-01-31 10:09:15 KST - INFO - 새 질문 번호 17의 결과를 저장했습니다.
+2025-01-31 10:09:17 KST - INFO - 새 질문 번호 18의 결과를 저장했습니다.
+2025-01-31 10:09:20 KST - INFO - 새 질문 번호 19의 결과를 저장했습니다.
+2025-01-31 10:09:25 KST - INFO - 새 질문 번호 20의 결과를 저장했습니다.
+2025-01-31 10:09:27 KST - INFO - 새 질문 번호 21의 결과를 저장했습니다.
+2025-01-31 10:09:30 KST - INFO - 새 질문 번호 22의 결과를 저장했습니다.
+2025-01-31 10:09:34 KST - INFO - 새 질문 번호 23의 결과를 저장했습니다.
+2025-01-31 10:09:37 KST - INFO - 새 질문 번호 24의 결과를 저장했습니다.
+2025-01-31 10:09:40 KST - INFO - 새 질문 번호 26의 결과를 저장했습니다.
+2025-01-31 10:09:44 KST - INFO - 새 질문 번호 27의 결과를 저장했습니다.
+2025-01-31 10:09:49 KST - INFO - 새 질문 번호 28의 결과를 저장했습니다.
+2025-01-31 10:09:52 KST - INFO - 새 질문 번호 29의 결과를 저장했습니다.
+2025-01-31 10:09:55 KST - INFO - 새 질문 번호 30의 결과를 저장했습니다.
+2025-01-31 10:09:55 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 10:10:02 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 10:10:05 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 10:10:07 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-31 10:10:08 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-31 10:10:11 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-31 10:10:13 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-31 10:10:16 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-31 10:10:19 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-31 10:10:21 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-31 10:10:22 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-31 10:10:24 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-31 10:10:26 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-31 10:10:27 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 11에 추가되었습니다.
+2025-01-31 10:10:30 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 12에 추가되었습니다.
+2025-01-31 10:10:31 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 13에 추가되었습니다.
+2025-01-31 10:10:34 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 14에 추가되었습니다.
+2025-01-31 10:10:37 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 15에 추가되었습니다.
+2025-01-31 10:10:38 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 16에 추가되었습니다.
+2025-01-31 10:10:40 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 17에 추가되었습니다.
+2025-01-31 10:10:41 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 18에 추가되었습니다.
+2025-01-31 10:10:43 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 19에 추가되었습니다.
+2025-01-31 10:10:46 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 20에 추가되었습니다.
+2025-01-31 10:10:49 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 21에 추가되었습니다.
+2025-01-31 10:10:51 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 22에 추가되었습니다.
+2025-01-31 10:10:53 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 23에 추가되었습니다.
+2025-01-31 10:10:54 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 24에 추가되었습니다.
+2025-01-31 10:10:57 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 26에 추가되었습니다.
+2025-01-31 10:11:00 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 27에 추가되었습니다.
+2025-01-31 10:11:03 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 28에 추가되었습니다.
+2025-01-31 10:11:05 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 29에 추가되었습니다.
+2025-01-31 10:11:08 KST - INFO - 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 30에 추가되었습니다.
+2025-01-31 10:11:08 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 10:11:15 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 10:11:17 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 10:11:18 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-31 10:11:21 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-31 10:11:23 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-31 10:11:25 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-31 10:11:29 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-31 10:11:30 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-31 10:11:33 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-31 10:11:34 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-31 10:11:36 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-31 10:11:38 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-31 10:11:40 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 11에 추가되었습니다.
+2025-01-31 10:11:43 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 12에 추가되었습니다.
+2025-01-31 10:11:45 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 13에 추가되었습니다.
+2025-01-31 10:11:48 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 14에 추가되었습니다.
+2025-01-31 10:11:49 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 15에 추가되었습니다.
+2025-01-31 10:11:50 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 16에 추가되었습니다.
+2025-01-31 10:11:52 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 17에 추가되었습니다.
+2025-01-31 10:11:54 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 18에 추가되었습니다.
+2025-01-31 10:11:58 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 19에 추가되었습니다.
+2025-01-31 10:12:01 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 20에 추가되었습니다.
+2025-01-31 10:12:03 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 21에 추가되었습니다.
+2025-01-31 10:12:04 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 22에 추가되었습니다.
+2025-01-31 10:12:06 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 23에 추가되었습니다.
+2025-01-31 10:12:07 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 24에 추가되었습니다.
+2025-01-31 10:12:09 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 26에 추가되었습니다.
+2025-01-31 10:12:10 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 27에 추가되었습니다.
+2025-01-31 10:12:12 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 28에 추가되었습니다.
+2025-01-31 10:12:13 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 29에 추가되었습니다.
+2025-01-31 10:12:15 KST - INFO - 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 30에 추가되었습니다.
+2025-01-31 10:12:15 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 10:12:21 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 10:12:21 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 10:12:23 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-31 10:12:25 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-31 10:12:27 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-31 10:12:28 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-31 10:12:31 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-31 10:12:33 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-31 10:12:34 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-31 10:12:35 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-31 10:12:37 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-31 10:12:39 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-31 10:12:40 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 11에 추가되었습니다.
+2025-01-31 10:12:41 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 12에 추가되었습니다.
+2025-01-31 10:12:44 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 13에 추가되었습니다.
+2025-01-31 10:12:47 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 14에 추가되었습니다.
+2025-01-31 10:12:48 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 15에 추가되었습니다.
+2025-01-31 10:12:49 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 16에 추가되었습니다.
+2025-01-31 10:12:51 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 17에 추가되었습니다.
+2025-01-31 10:12:52 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 18에 추가되었습니다.
+2025-01-31 10:12:56 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 19에 추가되었습니다.
+2025-01-31 10:12:58 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 20에 추가되었습니다.
+2025-01-31 10:12:59 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 21에 추가되었습니다.
+2025-01-31 10:13:00 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 22에 추가되었습니다.
+2025-01-31 10:13:01 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 23에 추가되었습니다.
+2025-01-31 10:13:02 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 24에 추가되었습니다.
+2025-01-31 10:13:04 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 26에 추가되었습니다.
+2025-01-31 10:13:06 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 27에 추가되었습니다.
+2025-01-31 10:13:07 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 28에 추가되었습니다.
+2025-01-31 10:13:08 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 29에 추가되었습니다.
+2025-01-31 10:13:10 KST - INFO - 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 30에 추가되었습니다.
+2025-01-31 10:13:10 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 10:13:17 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 10:17:27 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 10:17:30 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-31 10:17:34 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-31 10:17:38 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-31 10:17:41 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-31 10:17:45 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-31 10:17:48 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-31 10:17:51 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-31 10:17:54 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-31 10:17:58 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-31 10:18:03 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-31 10:18:06 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 11에 추가되었습니다.
+2025-01-31 10:18:09 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 12에 추가되었습니다.
+2025-01-31 10:18:12 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 13에 추가되었습니다.
+2025-01-31 10:18:15 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 14에 추가되었습니다.
+2025-01-31 10:18:20 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 15에 추가되었습니다.
+2025-01-31 10:18:23 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 16에 추가되었습니다.
+2025-01-31 10:18:26 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 17에 추가되었습니다.
+2025-01-31 10:18:29 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 18에 추가되었습니다.
+2025-01-31 10:18:33 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 19에 추가되었습니다.
+2025-01-31 10:18:40 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 20에 추가되었습니다.
+2025-01-31 10:18:44 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 21에 추가되었습니다.
+2025-01-31 10:18:47 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 22에 추가되었습니다.
+2025-01-31 10:18:50 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 23에 추가되었습니다.
+2025-01-31 10:18:53 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 24에 추가되었습니다.
+2025-01-31 10:18:57 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 26에 추가되었습니다.
+2025-01-31 10:19:04 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 27에 추가되었습니다.
+2025-01-31 10:19:07 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 28에 추가되었습니다.
+2025-01-31 10:19:11 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 29에 추가되었습니다.
+2025-01-31 10:19:16 KST - INFO - 'dense_sts_full_page_rerank_3'가 질문 번호 30에 추가되었습니다.
+2025-01-31 10:19:16 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 10:19:23 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 10:19:26 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 10:19:30 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-31 10:19:33 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-31 10:19:35 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-31 10:19:38 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-31 10:19:41 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-31 10:19:43 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-31 10:19:45 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-31 10:19:46 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-31 10:19:49 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-31 10:19:51 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-31 10:19:52 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 11에 추가되었습니다.
+2025-01-31 10:19:54 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 12에 추가되었습니다.
+2025-01-31 10:19:56 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 13에 추가되었습니다.
+2025-01-31 10:19:57 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 14에 추가되었습니다.
+2025-01-31 10:20:02 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 15에 추가되었습니다.
+2025-01-31 10:20:03 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 16에 추가되었습니다.
+2025-01-31 10:20:05 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 17에 추가되었습니다.
+2025-01-31 10:20:07 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 18에 추가되었습니다.
+2025-01-31 10:20:10 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 19에 추가되었습니다.
+2025-01-31 10:20:14 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 20에 추가되었습니다.
+2025-01-31 10:20:16 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 21에 추가되었습니다.
+2025-01-31 10:20:17 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 22에 추가되었습니다.
+2025-01-31 10:20:19 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 23에 추가되었습니다.
+2025-01-31 10:20:21 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 24에 추가되었습니다.
+2025-01-31 10:20:24 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 26에 추가되었습니다.
+2025-01-31 10:20:27 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 27에 추가되었습니다.
+2025-01-31 10:20:30 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 28에 추가되었습니다.
+2025-01-31 10:20:32 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 29에 추가되었습니다.
+2025-01-31 10:20:35 KST - INFO - 'dense_sts_full_page_no_reranker'가 질문 번호 30에 추가되었습니다.
+2025-01-31 10:20:35 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 10:20:42 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 10:20:44 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 10:20:45 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 1에 추가되었습니다.
+2025-01-31 10:20:48 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 2에 추가되었습니다.
+2025-01-31 10:20:50 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 3에 추가되었습니다.
+2025-01-31 10:20:52 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 4에 추가되었습니다.
+2025-01-31 10:20:55 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 5에 추가되었습니다.
+2025-01-31 10:20:58 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 6에 추가되었습니다.
+2025-01-31 10:21:01 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 7에 추가되었습니다.
+2025-01-31 10:21:03 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 8에 추가되었습니다.
+2025-01-31 10:21:14 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 9에 추가되었습니다.
+2025-01-31 10:21:16 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 10에 추가되었습니다.
+2025-01-31 10:21:18 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 11에 추가되었습니다.
+2025-01-31 10:21:20 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 12에 추가되었습니다.
+2025-01-31 10:21:23 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 13에 추가되었습니다.
+2025-01-31 10:21:25 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 14에 추가되었습니다.
+2025-01-31 10:21:30 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 15에 추가되었습니다.
+2025-01-31 10:21:31 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 16에 추가되었습니다.
+2025-01-31 10:21:34 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 17에 추가되었습니다.
+2025-01-31 10:21:36 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 18에 추가되었습니다.
+2025-01-31 10:21:50 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 19에 추가되었습니다.
+2025-01-31 10:21:52 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 20에 추가되었습니다.
+2025-01-31 10:21:54 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 21에 추가되었습니다.
+2025-01-31 10:21:56 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 22에 추가되었습니다.
+2025-01-31 10:21:59 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 23에 추가되었습니다.
+2025-01-31 10:22:00 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 24에 추가되었습니다.
+2025-01-31 10:22:03 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 26에 추가되었습니다.
+2025-01-31 10:22:05 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 27에 추가되었습니다.
+2025-01-31 10:22:08 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 28에 추가되었습니다.
+2025-01-31 10:22:11 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 29에 추가되었습니다.
+2025-01-31 10:22:13 KST - INFO - 'sparse_bm25_full_page_rerank_3'가 질문 번호 30에 추가되었습니다.
+2025-01-31 10:22:13 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 10:22:19 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 10:22:20 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 10:22:21 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 1에 추가되었습니다.
+2025-01-31 10:22:23 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 2에 추가되었습니다.
+2025-01-31 10:22:28 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 3에 추가되었습니다.
+2025-01-31 10:22:29 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 4에 추가되었습니다.
+2025-01-31 10:22:32 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 5에 추가되었습니다.
+2025-01-31 10:22:34 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 6에 추가되었습니다.
+2025-01-31 10:22:36 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 7에 추가되었습니다.
+2025-01-31 10:22:37 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 8에 추가되었습니다.
+2025-01-31 10:22:40 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 9에 추가되었습니다.
+2025-01-31 10:22:42 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 10에 추가되었습니다.
+2025-01-31 10:22:43 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 11에 추가되었습니다.
+2025-01-31 10:22:46 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 12에 추가되었습니다.
+2025-01-31 10:22:48 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 13에 추가되었습니다.
+2025-01-31 10:22:50 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 14에 추가되었습니다.
+2025-01-31 10:22:53 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 15에 추가되었습니다.
+2025-01-31 10:22:55 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 16에 추가되었습니다.
+2025-01-31 10:22:56 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 17에 추가되었습니다.
+2025-01-31 10:22:58 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 18에 추가되었습니다.
+2025-01-31 10:23:00 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 19에 추가되었습니다.
+2025-01-31 10:23:01 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 20에 추가되었습니다.
+2025-01-31 10:23:02 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 21에 추가되었습니다.
+2025-01-31 10:23:04 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 22에 추가되었습니다.
+2025-01-31 10:23:06 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 23에 추가되었습니다.
+2025-01-31 10:23:07 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 24에 추가되었습니다.
+2025-01-31 10:23:09 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 26에 추가되었습니다.
+2025-01-31 10:23:10 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 27에 추가되었습니다.
+2025-01-31 10:23:12 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 28에 추가되었습니다.
+2025-01-31 10:23:14 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 29에 추가되었습니다.
+2025-01-31 10:23:16 KST - INFO - 'sparse_bm25_full_page_no_reranker'가 질문 번호 30에 추가되었습니다.
+2025-01-31 10:23:16 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 11:00:30 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 11:00:35 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 3에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 4에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 5에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 6에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 7에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 8에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 9에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 10에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 11에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 12에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 13에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 14에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 15에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 16에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 17에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 18에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 19에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 20에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 21에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 22에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 23에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 24에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 26에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 27에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 28에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 29에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_rerank_3'가 질문 번호 30에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:35 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 11:00:42 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 11:00:45 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 3에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 4에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 5에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 6에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 7에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 8에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 9에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 10에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 11에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 12에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 13에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 14에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 15에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 16에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 17에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 18에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 19에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 20에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 21에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 22에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 23에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 24에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 26에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 27에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 28에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 29에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 중복된 키 'dense_sts_chunking_500_100_no_reranker'가 질문 번호 30에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:45 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 11:00:52 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 11:00:55 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 3에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 4에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 5에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 6에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 7에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 8에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 9에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 10에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 11에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 12에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 13에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 14에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 15에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 16에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 17에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 18에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 19에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 20에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 21에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 22에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 23에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 24에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 26에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 27에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 28에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 29에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_rerank_3'가 질문 번호 30에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:00:55 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 11:01:01 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 11:01:02 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 3에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 4에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 5에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 6에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 7에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 8에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 9에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 10에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 11에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 12에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 13에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 14에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 15에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 16에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 17에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 18에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 19에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 20에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 21에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 22에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 23에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 24에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 26에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 27에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 28에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 29에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 중복된 키 'sparse_bm25_chunking_500_100_no_reranker'가 질문 번호 30에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:02 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 11:01:08 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 11:01:13 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 3에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 4에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 5에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 6에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 7에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 8에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 9에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 10에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 11에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 12에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 13에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 14에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 15에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 16에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 17에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 18에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 19에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 20에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 21에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 22에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 23에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 24에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 26에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 27에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 28에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 29에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 중복된 키 'dense_sts_full_page_rerank_3'가 질문 번호 30에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:13 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 11:01:20 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 11:01:23 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 3에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 4에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 5에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 6에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 7에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 8에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 9에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 10에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 11에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 12에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 13에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 14에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 15에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 16에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 17에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 18에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 19에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 20에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 21에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 22에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 23에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 24에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 26에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 27에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 28에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 29에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 중복된 키 'dense_sts_full_page_no_reranker'가 질문 번호 30에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:23 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 11:01:30 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 11:01:32 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 3에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 4에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 5에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 6에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 7에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 8에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 9에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 10에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 11에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 12에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 13에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 14에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 15에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 16에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 17에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 18에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 19에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 20에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 21에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 22에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 23에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 24에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 26에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 27에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 28에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 29에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 중복된 키 'sparse_bm25_full_page_rerank_3'가 질문 번호 30에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:32 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json
+2025-01-31 11:01:38 KST - INFO - 'answer_pages' 컬럼에서 29개의 정답페이지를 가져왔습니다.
+2025-01-31 11:01:38 KST - INFO - 기존 결과 파일을 불러왔습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 1에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 2에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 3에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 4에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 5에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 6에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 7에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 8에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 9에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 10에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 11에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 12에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 13에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 14에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 15에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 16에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 17에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 18에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 19에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 20에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 21에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 22에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 23에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 24에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 26에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 27에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 28에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 29에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 중복된 키 'sparse_bm25_full_page_no_reranker'가 질문 번호 30에 이미 존재합니다. 추가하지 않습니다.
+2025-01-31 11:01:38 KST - INFO - 
+모든 질문에 대한 결과가 json 파일로 저장되었습니다: results/result_20250131_q_QnA_car_sample_30_context_labeling_markdown.json

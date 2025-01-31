@@ -1,0 +1,9 @@
+config/config.yaml
+models/
+*.safetensors
+__pycache__/
+*.pyc
+.env
+results/
+evaluation_results/
+documents/
