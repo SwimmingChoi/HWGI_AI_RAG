@@ -3,10 +3,14 @@ from modules.document_processor import DocumentProcessor
 from modules.dense_retrieval import CustomEmbeddings
 from modules.sparse_retrieval import BM25Retriever
 from modules.qa_chain import QAChain
+from modules.query_translation import QueryTranslation
+from modules.model_response_divider import parse_model_response
+from modules.file_saver import ExcelSaver
+
 import pandas as pd
-# from eval import evaluate_results
 from datetime import datetime
 from zoneinfo import ZoneInfo
+from time import time
 import json
 
 from utils.logger import setup_logger
@@ -31,7 +35,7 @@ def main():
     reference_questions = df[['number', 'question']].dropna().set_index('number')['question'].to_dict()
     reference_answers = df.set_index('number')['answers'].dropna().to_dict()
     reference_pages = df.set_index('number')['answer_pages'].dropna().to_dict()
-    reference_context = df.set_index('number')['ground truth page content'].dropna().to_dict()
+    # reference_context = df.set_index('number')['ground truth page content'].dropna().to_dict()
     # reference_info = df.set_index('number')['document'].dropna().to_dict()
     logger.info(f"'answer_pages' 컬럼에서 {len(reference_pages)}개의 정답페이지를 가져왔습니다.")
     
@@ -76,6 +80,7 @@ def main():
         retriever=retriever,
         search_type=retrieval_type,
         top_k=config['retrieval']['top_k'],
+        query_translation=config['query_translation'],
         use_reranker=config['retrieval']['reranker'],
         reranker_model=config['retrieval']['reranker_model'],
         reranker_top_k=config['retrieval']['reranker_top_k']
@@ -86,12 +91,12 @@ def main():
     # document_name = os.path.splitext(config['dataset']['document'])[0]
     chunking = f"chunking_{config['preprocessing']['chunk_size']}_{config['preprocessing']['chunk_overlap']}" if config['preprocessing']['chunking'] else "full_page"
     reranker = f"rerank_{config['retrieval']['reranker_top_k']}" if config['retrieval']['reranker'] else "no_reranker"
-
+    query_translation = f"hyde" if config['query_translation'] else "no_hyde"
 
     # 출력 파일 경로 설정
     output_file = os.path.join(
         config['output']['save_path'], 
-        f"result_{today_date}_q_{qna_name}.json"
+        f"result_{today_date}_q_{qna_name}_{query_translation}_{chunking}_{reranker}.json"
     )
 
 
@@ -110,42 +115,63 @@ def main():
     new_key = (
         f"{retrieval_type}_"
         f"{embedding_service.model_type if retrieval_type == 'dense' else 'bm25'}_"
+        f"{query_translation}_"
         f"{chunking}_"
         f"{reranker}"
     )
 
     # 결과 처리
     for num, question in reference_questions.items():
+        start_time = time()
         if num in save_results:
             # 기존 데이터에서 new_key 확인
             if new_key in save_results[num]['llm response']:
                 logger.info(f"중복된 키 '{new_key}'가 질문 번호 {num}에 이미 존재합니다. 추가하지 않습니다.")
                 continue
             else:
-                # 새로운 키 추가
-                result = qa_chain.ask_question(question, reset_memory=True)
+                if config['query_translation']:
+                    query_translation = QueryTranslation(config)
+                    generated_docs_for_retrieval = query_translation.translate(question)
+                    result = qa_chain.ask_question_with_translation(question,generated_docs_for_retrieval, reset_memory=True)
+                else:
+                    result = qa_chain.ask_question(question, reset_memory=True)
+                end_time = time()
+                logger.info(f"질문 번호 {num}의 소요 시간: {end_time - start_time}초")
+                answer = parse_model_response(result['answer'])
                 save_results[num]['llm response'][new_key] = {
-                    "answer": result['answer'],
+                    "answer": answer['Answer'],
+                    "explanation": answer['Explanation'],
                     "pages": result['context_pages'],
-                    "page contents": result['context_pages_content']
+                    "page contents": result['context_pages_content'],
+                    "time": end_time - start_time
                 }
                 logger.info(f"'{new_key}'가 질문 번호 {num}에 추가되었습니다.")
         else:
+            start_time = time()
             # 새로운 질문 추가
-            result = qa_chain.ask_question(question, reset_memory=True)
-            
+            if config['query_translation']:
+                query_translation = QueryTranslation(config)
+                generated_docs_for_retrieval = query_translation.translate(question)
+                result = qa_chain.ask_question_with_translation(question, generated_docs_for_retrieval, reset_memory=True)
+            else:
+                result = qa_chain.ask_question(question, reset_memory=True)
+            end_time = time()
+            logger.info(f"질문 번호 {num}의 소요 시간: {end_time - start_time}초")
+            answer = parse_model_response(result['answer'])
+            print(answer)
             if 'context_labeling' in config['dataset']['qna']:
                 save_results[num] = {
                     "number": num,
                     "question": question,
                     "ground truth answer": reference_answers.get(num, ""),
                     "ground truth answer pages": reference_pages.get(num, []),
-                    'ground truth answer context': reference_context.get(num, ""),
                     "llm response": {
                     new_key: {
-                        "answer": result['answer'],
+                        "answer": answer['Answer'],
+                        "explanation": answer['Explanation'],
                         "pages": result['context_pages'],
-                        "page contents": result['context_pages_content']
+                        "page contents": result['context_pages_content'],
+                        "time": end_time - start_time
                     }
                 },
                 
@@ -158,72 +184,29 @@ def main():
                     "ground truth answer pages": reference_pages.get(num, []),
                     "llm response": {
                     new_key: {
-                        "answer": result['answer'],
+                        "answer": answer['Answer'],
+                        "explanation": answer['Explanation'],
                         "pages": result['context_pages'],
-                        "page contents": result['context_pages_content']
+                        "page contents": result['context_pages_content'],
+                        "time": end_time - start_time
                     }
                 },
                 # "실제QA": result['실제QA'],
                 # "document": result['document']
             }
             logger.info(f"새 질문 번호 {num}의 결과를 저장했습니다.")
+    
+    end_time = time()
+    logger.info(f"총 소요 시간: {end_time - start_time}초")
 
     # 결과 저장
     with open(output_file, 'w', encoding='utf-8') as json_file:
         json.dump(list(save_results.values()), json_file, ensure_ascii=False, indent=4)
     logger.info(f"\n모든 질문에 대한 결과가 json 파일로 저장되었습니다: {output_file}")
 
-    # JSON 파일 읽기
-    with open(output_file, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-
-    # 필요한 데이터 추출
-    excel_data = []
-    prev_number = None
-
-    # methods 자동 추출 (첫 번째 항목의 llm response에서 키들을 가져옴)
-    methods = list(data[0]['llm response'].keys())
-
-    for item in data:
-        # 각 method별로 행 생성
-        for i, method in enumerate(methods):
-            if 'context_labeling' in config['dataset']['qna']:
-                row = {
-                    'number': item['number'] if item['number'] != prev_number else '',
-                    'question': item['question'] if item['number'] != prev_number else '',
-                    'ground truth answer': item['ground truth answer'] if item['number'] != prev_number else '',
-                    'ground truth answer pages': item['ground truth answer pages'].strip('[]') if item['number'] != prev_number else '',
-                    'ground truth answer context': item['ground truth answer context'] if item['number'] != prev_number else '',
-                    'method': method,
-                    'answer': item['llm response'][method]['answer'],
-                    'rag answer pages': str(item['llm response'][method]['pages']).strip('[]'),
-                    'rag answer page contents': item['llm response'][method]['page contents'],
-                }
-            else:
-                row = {
-                    'number': item['number'] if item['number'] != prev_number else '',
-                    'question': item['question'] if item['number'] != prev_number else '',
-                    'ground truth answer': item['ground truth answer'] if item['number'] != prev_number else '',
-                'ground truth answer pages': item['ground truth answer pages'].strip('[]') if item['number'] != prev_number else '',
-                'method': method,
-                'answer': item['llm response'][method]['answer'],
-                'rag answer pages': str(item['llm response'][method]['pages']).strip('[]'),
-                'rag answer page contents': item['llm response'][method]['page contents'],
-                # '실제QA': item['실제QA'] if item['number'] != prev_number else '',
-                # 'document' : item['document'] if item['number'] != prev_number else ''
-            }
-            excel_data.append(row)
-            prev_number = item['number']
-
-    # DataFrame 생성
-    df = pd.DataFrame(excel_data)
-
-    # 칼럼 순서 지정
-    columns = ['number', 'question', 'ground truth answer', 'ground truth answer context', 'ground truth answer pages', 'method', 'answer', 'rag answer pages', 'rag answer page contents']
-    df = df[columns]
-
-    # Excel 파일로 저장 (encoding 파라미터 제거)
-    df.to_excel(output_file.replace('.json', '.xlsx'), index=False)
+    # Excel 저장
+    excel_saver = ExcelSaver(output_file)
+    excel_saver.save_to_excel(save_results)
 
 
 if __name__ == "__main__":

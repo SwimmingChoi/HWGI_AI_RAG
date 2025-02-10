@@ -11,8 +11,8 @@ SCRIPT="./rag_main.py"
 # 가능한 조건 값 정의
 chunking_values=("True" "False")
 retrieval_types=("dense" "sparse")
-reranker_values=("True" "False")
-# reranker_values=("True")
+# reranker_values=("True" "False")
+reranker_values=("True")
 
 # 모든 조합을 반복
 for chunking in "${chunking_values[@]}"

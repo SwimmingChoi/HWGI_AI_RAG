@@ -3,10 +3,13 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import ChatOpenAI
+from langchain.schema.runnable import RunnablePassthrough, RunnableLambda
+from langchain_core.output_parsers import StrOutputParser
+from langchain.schema import Document
 import logging
 from typing import Optional, Union
 from modules.reranker import Reranker
-
+from modules.query_translation import QueryTranslation
 
 
 class QAChain:
@@ -16,6 +19,7 @@ class QAChain:
         retriever: str = None,
         search_type: str = "sparse",  # "bm25" 또는 "vector"
         top_k: int = 3,
+        query_translation: bool = False,  # HyDE 활성화를 위한 파라미터
         use_reranker: bool = False,
         reranker_model: str = "BAAI/bge-reranker-base",
         reranker_top_k: int = 3
@@ -45,6 +49,7 @@ class QAChain:
 
         try:
             self.active_retriever = retriever_options[search_type]()
+            
         except KeyError:
             raise ValueError("search_type은 'sparse' 또는 'dense'여야 합니다.")
 
@@ -58,16 +63,15 @@ class QAChain:
             ).get_retriever()
 
 
-
         self.memory = ConversationBufferMemory(
             memory_key="chat_history",
             output_key="answer",
             return_messages=True
         )
+        
         self.qa_chain = self._create_qa_chain()
 
     def _create_qa_chain(self):
-        # 기존 _create_qa_chain 코드와 동일하지만 retriever 부분만 수정
         condense_question_prompt = ChatPromptTemplate.from_messages([
             MessagesPlaceholder(variable_name="chat_history"),
             ("user", "{input}"),
@@ -78,19 +82,26 @@ class QAChain:
             ("system", """
             - 당신은 친절한 보험 전문 AI 어시스턴트입니다.
             - 반드시 주어진 관련 정보(context)를 바탕으로 사용자의 질문에 답변해주세요.
-            - 답변은 간결하게 해야 합니다.
             - 이전 대화 내용을 참고하여 일관성 있게 대답하세요.
             
             - 추측하거나 거짓 정보를 제공하지 마세요. 모르면 모른다고 답변해야합니다.
             - 관련 정보(context)에 포함된 정보가 없을 경우, "죄송합니다. 해당 질문에 대한 답변을 찾을 수 없습니다."라고 말씀해 주세요.
+            
+            - 반드시 다음 형식으로 답변해주세요:
+            explanation: [주어진 context를 바탕으로 답변의 근거 설명]
+            answer: [최종 답변]
             """),
             ("user", "{input}"),
-            ("assistant", "관련 정보: {context}\n\n")
+            ("assistant", """관련 정보: {context}
+
+            explanation: 주어진 정보를 분석한 결과,
+            
+            answer: """)
         ])
 
         retriever_chain = create_history_aware_retriever(
             llm=self.llm,
-            retriever=self.active_retriever,  # active_retriever 사용
+            retriever=self.active_retriever,
             prompt=condense_question_prompt
         )
 
@@ -104,14 +115,59 @@ class QAChain:
             document_chain,
         )
 
+    def ask_question_with_translation(self, question: str, generated_docs_for_retrieval: str, reset_memory: bool = False) -> dict:
+        
+        try:
+            normalized_question = " ".join(question.strip().split())
 
+            if reset_memory:
+                self.memory.clear()
+            
+            # 이미 생성된 가상 문서를 직접 retriever에 전달
+            retrieved_docs = self.active_retriever.invoke(generated_docs_for_retrieval)
+            
+            # QA 체인에 검색된 문서와 원래 질문을 전달
+            response = self.qa_chain.invoke({
+                "chat_history": self.memory.chat_memory.messages if self.memory else [],
+                "input": normalized_question,
+                "context": retrieved_docs
+            })
+            
+            context_docs = response.get("context", [])
+            context_pages = [
+                doc.metadata.get('page', 'Unknown')
+                for doc in context_docs
+            ]
+            
+            context_pages_content = [   
+                doc.page_content
+                for doc in context_docs
+            ]
+            
+            result = {
+                'question': question,   
+                'answer': response['answer'],
+                'context_pages': [doc.metadata.get('page', 'Unknown') for doc in retrieved_docs],
+                'context_pages_content': context_pages_content
+            }
+            
+            if self.memory: 
+                self.memory.chat_memory.add_user_message(question)
+                self.memory.chat_memory.add_ai_message(result['answer'])
+                
+            return result
+        
+        except Exception as e:
+            logging.error(f"질문 처리 중 오류 발생: {str(e)}")
+            raise
+    
     def ask_question(self, question: str, reset_memory: bool = False) -> dict:
         """
         질문을 받아 답변과 참조 문서를 반환하는 함수
         """
         try:
             normalized_question = " ".join(question.strip().split())
-            
+        
             if reset_memory:
                 self.memory.clear()
 
@@ -132,7 +188,6 @@ class QAChain:
                 for doc in context_docs
                 
             ]
-
 
             result = {
                 'question': question,
