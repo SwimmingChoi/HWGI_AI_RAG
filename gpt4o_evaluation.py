@@ -20,6 +20,7 @@ args = parser.parse_args()
 # 설정 로드
 current_dir = os.path.dirname(os.path.abspath(__file__))
 config = load_config(os.path.join(current_dir, "config", f"{args.config}.yaml"))['openai']
+openai_config = config['openai']
 
 def main():
     # 결과 파일 경로 (수정 예정)
