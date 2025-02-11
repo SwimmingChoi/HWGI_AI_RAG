@@ -16,11 +16,13 @@ class CorrectnessGrade(TypedDict):
     correct: Annotated[bool, ..., "답변이 옳다면 True, 틀리다면 False"]
 
 class CorrectnessGrader:
-    def __init__(self, config: dict):
+    def __init__(self, openai_config: dict):
         # 초기화 시 config 값을 저장하고 OpenAI 모델을 설정
-        self.config = config
+        self.openai_config = openai_config
         self.grader_llm = ChatOpenAI(
-            model=config['openai']['gpt_model'], temperature=0
+            model=openai_config['gpt_model'],
+            temperature=0,
+            openai_api_key=openai_config['api_key']
         ).with_structured_output(
             CorrectnessGrade, method="json_schema", strict=True
         )
@@ -68,11 +70,13 @@ class RelevanceGrade(TypedDict):
     relevant: Annotated[bool, ..., "답변이 질문을 적절히 다루는지에 대해 True, 아니면 False를 제공하세요."]
 
 class RelevanceGrader:
-    def __init__(self, config: dict):
+    def __init__(self, openai_config: dict):
         # 초기화 시 config 값을 저장하고 OpenAI 모델을 설정
-        self.config = config
+        self.openai_config = openai_config
         self.grader_llm = ChatOpenAI(
-            model=config['openai']['gpt_model'], temperature=0
+            model=openai_config['gpt_model'],
+            temperature=0,
+            openai_api_key=openai_config['api_key']
         ).with_structured_output(
             RelevanceGrade, method="json_schema", strict=True
         )
@@ -116,11 +120,13 @@ class GroundedGrade(TypedDict):
     grounded: Annotated[bool, ..., "답변이 문서를 근거로 하고 있는지에 대해 True, 아니면 False를 제공하세요."]
 
 class GroundedGrader:
-    def __init__(self, config: dict):
+    def __init__(self, openai_config: dict):
         # 초기화 시 config 값을 저장하고 OpenAI 모델을 설정
-        self.config = config
+        self.openai_config = openai_config
         self.grader_llm = ChatOpenAI(
-            model=config['openai']['gpt_model'], temperature=0
+            model=openai_config['gpt_model'],
+            temperature=0,
+            openai_api_key=openai_config['api_key']
         ).with_structured_output(
             GroundedGrade, method="json_schema", strict=True
         )
@@ -164,11 +170,13 @@ class RetrievalRelevanceGrade(TypedDict):
     relevant: Annotated[bool, ..., "수집된 문서가 질문과 관련되어 있는지에 대해 True, 아니면 False를 제공하세요."]
 
 class RetrievalRelevanceGrader:
-    def __init__(self, config: dict):
+    def __init__(self, openai_config: dict):
         # 초기화 시 config 값을 저장하고 OpenAI 모델을 설정
-        self.config = config
+        self.openai_config = openai_config
         self.grader_llm = ChatOpenAI(
-            model=config['openai']['gpt_model'], temperature=0
+            model=openai_config['gpt_model'],
+            temperature=0,
+            openai_api_key=openai_config['api_key']
         ).with_structured_output(
             RetrievalRelevanceGrade, method="json_schema", strict=True
         )

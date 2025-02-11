@@ -3,9 +3,7 @@ from modules.document_processor import DocumentProcessor
 from modules.dense_retrieval import CustomEmbeddings
 from modules.sparse_retrieval import BM25Retriever
 from modules.qa_chain import QAChain
-from modules.query_translation import QueryTranslation
-from modules.model_response_divider import parse_model_response
-from modules.file_saver import ExcelSaver
+from modules.file_saver import ExcelSaver, JsonSaver
 
 import pandas as pd
 from datetime import datetime
@@ -21,6 +19,8 @@ import os
 import argparse
 
 def main():
+    
+    total_start_time = time()
     
     parser = argparse.ArgumentParser(description='Enter user name for the config script')
     parser.add_argument('--config', type=str, required=False, default='config')
@@ -79,8 +79,8 @@ def main():
         openai_config=config['openai'],
         retriever=retriever,
         search_type=retrieval_type,
+        query_translation_type=config['query_translation']['type'],
         top_k=config['retrieval']['top_k'],
-        query_translation=config['query_translation'],
         use_reranker=config['retrieval']['reranker'],
         reranker_model=config['retrieval']['reranker_model'],
         reranker_top_k=config['retrieval']['reranker_top_k']
@@ -91,12 +91,12 @@ def main():
     # document_name = os.path.splitext(config['dataset']['document'])[0]
     chunking = f"chunking_{config['preprocessing']['chunk_size']}_{config['preprocessing']['chunk_overlap']}" if config['preprocessing']['chunking'] else "full_page"
     reranker = f"rerank_{config['retrieval']['reranker_top_k']}" if config['retrieval']['reranker'] else "no_reranker"
-    query_translation = f"hyde" if config['query_translation'] else "no_hyde"
+    query_translation = f"{config['query_translation']['type']}"
 
     # 출력 파일 경로 설정
     output_file = os.path.join(
         config['output']['save_path'], 
-        f"result_{today_date}_q_{qna_name}_{query_translation}_{chunking}_{reranker}.json"
+        f"result_{today_date}_q_{qna_name}.json"
     )
 
 
@@ -119,7 +119,10 @@ def main():
         f"{chunking}_"
         f"{reranker}"
     )
-
+    
+    # call json_saver
+    json_saver = JsonSaver(output_file)
+    
     # 결과 처리
     for num, question in reference_questions.items():
         start_time = time()
@@ -129,36 +132,20 @@ def main():
                 logger.info(f"중복된 키 '{new_key}'가 질문 번호 {num}에 이미 존재합니다. 추가하지 않습니다.")
                 continue
             else:
-                if config['query_translation']:
-                    query_translation = QueryTranslation(config)
-                    generated_docs_for_retrieval = query_translation.translate(question)
-                    result = qa_chain.ask_question_with_translation(question,generated_docs_for_retrieval, reset_memory=True)
-                else:
-                    result = qa_chain.ask_question(question, reset_memory=True)
+                result = qa_chain.multi_step_qa(question, reset_memory=True)
                 end_time = time()
-                logger.info(f"질문 번호 {num}의 소요 시간: {end_time - start_time}초")
-                answer = parse_model_response(result['answer'])
-                save_results[num]['llm response'][new_key] = {
-                    "answer": answer['Answer'],
-                    "explanation": answer['Explanation'],
-                    "pages": result['context_pages'],
-                    "page contents": result['context_pages_content'],
-                    "time": end_time - start_time
-                }
+                execution_time = end_time - start_time
+                logger.info(f"질문 번호 {num}의 소요 시간: {execution_time}초")
+                save_results[num]['llm response'][new_key] = json_saver.save_response(
+                    result, execution_time
+                    )
                 logger.info(f"'{new_key}'가 질문 번호 {num}에 추가되었습니다.")
         else:
-            start_time = time()
             # 새로운 질문 추가
-            if config['query_translation']:
-                query_translation = QueryTranslation(config)
-                generated_docs_for_retrieval = query_translation.translate(question)
-                result = qa_chain.ask_question_with_translation(question, generated_docs_for_retrieval, reset_memory=True)
-            else:
-                result = qa_chain.ask_question(question, reset_memory=True)
+            result = qa_chain.multi_step_qa(question, reset_memory=True)
             end_time = time()
-            logger.info(f"질문 번호 {num}의 소요 시간: {end_time - start_time}초")
-            answer = parse_model_response(result['answer'])
-            print(answer)
+            execution_time = end_time - start_time
+            logger.info(f"질문 번호 {num}의 소요 시간: {execution_time}초")
             if 'context_labeling' in config['dataset']['qna']:
                 save_results[num] = {
                     "number": num,
@@ -166,16 +153,11 @@ def main():
                     "ground truth answer": reference_answers.get(num, ""),
                     "ground truth answer pages": reference_pages.get(num, []),
                     "llm response": {
-                    new_key: {
-                        "answer": answer['Answer'],
-                        "explanation": answer['Explanation'],
-                        "pages": result['context_pages'],
-                        "page contents": result['context_pages_content'],
-                        "time": end_time - start_time
+                    new_key: json_saver.save_response(
+                        result, execution_time
+                        )
                     }
-                },
-                
-            }
+                }
             else:
                 save_results[num] = {
                     "number": num,
@@ -183,30 +165,25 @@ def main():
                     "ground truth answer": reference_answers.get(num, ""),
                     "ground truth answer pages": reference_pages.get(num, []),
                     "llm response": {
-                    new_key: {
-                        "answer": answer['Answer'],
-                        "explanation": answer['Explanation'],
-                        "pages": result['context_pages'],
-                        "page contents": result['context_pages_content'],
-                        "time": end_time - start_time
+                    new_key: json_saver.save_response(
+                        result, execution_time
+                        )
                     }
-                },
-                # "실제QA": result['실제QA'],
-                # "document": result['document']
-            }
+                }
             logger.info(f"새 질문 번호 {num}의 결과를 저장했습니다.")
     
-    end_time = time()
-    logger.info(f"총 소요 시간: {end_time - start_time}초")
+    total_end_time = time()
+    total_execution_time = total_end_time - total_start_time
+    logger.info(f"총 소요 시간: {total_execution_time}초")
 
     # 결과 저장
-    with open(output_file, 'w', encoding='utf-8') as json_file:
-        json.dump(list(save_results.values()), json_file, ensure_ascii=False, indent=4)
+    json_saver.save_to_json(save_results)
+    
     logger.info(f"\n모든 질문에 대한 결과가 json 파일로 저장되었습니다: {output_file}")
 
     # Excel 저장
     excel_saver = ExcelSaver(output_file)
-    excel_saver.save_to_excel(save_results)
+    excel_saver.save_to_excel()
 
 
 if __name__ == "__main__":

@@ -4,11 +4,27 @@ from modules.config_loader import load_config
 
 config = load_config('config/config.yaml')
 
+class JsonSaver:
+    def __init__(self, file_path: str):
+        self.output_file = file_path
+        
+    def save_response(self, result, execution_time):
+        return {
+            "answer": result['answer'],
+            "pages": result['context_pages'],
+            "page contents": result['context_pages_content'],
+            "time": execution_time
+        }
+        
+    def save_to_json(self, save_results):
+        with open(self.output_file, 'w', encoding='utf-8') as json_file:
+            json.dump(list(save_results.values()), json_file, ensure_ascii=False, indent=4)
+
 class ExcelSaver:
     def __init__(self, file_path: str):
         self.output_file = file_path
         
-    def save_to_excel(self, data: dict, sheet_name: str):
+    def save_to_excel(self):
            # JSON 파일 읽기
         with open(self.output_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -31,7 +47,6 @@ class ExcelSaver:
                         'ground truth answer pages': item['ground truth answer pages'].strip('[]') if item['number'] != prev_number else '',
                         'method': method,
                         'answer': item['llm response'][method]['answer'],
-                        'explanation': item['llm response'][method]['explanation'],
                         'rag answer pages': str(item['llm response'][method]['pages']).strip('[]'),
                         'rag answer page contents': item['llm response'][method]['page contents'],
                         'time': item['llm response'][method]['time']
@@ -44,7 +59,6 @@ class ExcelSaver:
                         'ground truth answer pages': item['ground truth answer pages'].strip('[]') if item['number'] != prev_number else '',
                         'method': method,
                         'answer': item['llm response'][method]['answer'],
-                        'explanation': item['llm response'][method]['explanation'],
                         'rag answer pages': str(item['llm response'][method]['pages']).strip('[]'),
                         'rag answer page contents': item['llm response'][method]['page contents'],
                         'time': item['llm response'][method]['time']

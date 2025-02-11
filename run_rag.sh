@@ -9,10 +9,12 @@ SCRIPT="./rag_main.py"
 # SCRIPT="./graph_rag_main.py"
 
 # 가능한 조건 값 정의
-chunking_values=("True" "False")
-retrieval_types=("dense" "sparse")
-# reranker_values=("True" "False")
-reranker_values=("True")
+chunking_values="False"
+retrieval_types="dense"
+model_types=("api" "sts")
+reranker_values="False"
+query_translation_values=("HyDE" "QueryRewrite")
+
 
 # 모든 조합을 반복
 for chunking in "${chunking_values[@]}"
@@ -21,26 +23,33 @@ do
   do
     for reranker in "${reranker_values[@]}"
     do
-      # top_k 값을 조건에 따라 설정
-      if [ "$reranker" == "True" ]; then
-        top_k=10
-      else
-        top_k=3
-      fi
+      for model_type in "${model_types[@]}"
+      do
+        for query_translation in "${query_translation_values[@]}"
+        do
+          # top_k 값을 조건에 따라 설정
+          if [ "$reranker" == "True" ]; then
+            top_k=10
+          else
+            top_k=3
+          fi
 
-      sed -i "s/^  chunking:.*$/  chunking: $chunking/" $CONFIG_FILE
-      sed -i "/^retrieval:/,/^[a-z]/ s/^  type:.*$/  type: $retrieval_type/" $CONFIG_FILE
-      sed -i "/^retrieval:/,/^[a-z]/ s/^  top_k:.*$/  top_k: $top_k/" $CONFIG_FILE
-      sed -i "/^retrieval:/,/^[a-z]/ s/^  reranker:.*$/  reranker: $reranker  # Reranker 사용 여부/" $CONFIG_FILE
+          sed -i "s/^  chunking:.*$/  chunking: $chunking/" $CONFIG_FILE
+          sed -i "/^retrieval:/,/^[a-z]/ s/^  type:.*$/  type: $retrieval_type/" $CONFIG_FILE
+          sed -i "/^retrieval:/,/^[a-z]/ s/^  top_k:.*$/  top_k: $top_k/" $CONFIG_FILE
+          sed -i "/^retrieval:/,/^[a-z]/ s/^  reranker:.*$/  reranker: $reranker  # Reranker 사용 여부/" $CONFIG_FILE
+          sed -i "/^dense_model:/,/^[a-z]/ s/^  model_type:.*$/  model_type: $model_type/" $CONFIG_FILE
+          sed -i "/^query_translation:/,/^[a-z]/ s/^  type:.*$/  type: $query_translation/" $CONFIG_FILE
+          # 변경된 config.yaml 출력
+          echo "Updated config.yaml:"
+          # grep -A 5 "retrieval:" $CONFIG_FILE
+          echo "Running with combination: chunking=$chunking, retrieval_type=$retrieval_type, top_k=$top_k, reranker=$reranker"
+        
+          python $SCRIPT
 
-      # 변경된 config.yaml 출력
-      echo "Updated config.yaml:"
-    #   grep -A 5 "retrieval:" $CONFIG_FILE
-      echo "Running with combination: chunking=$chunking, retrieval_type=$retrieval_type, top_k=$top_k, reranker=$reranker"
-      
-      python $SCRIPT
-      
-      echo "----------------------------------------"
+          echo "----------------------------------------"
+        done
+      done
     done
   done
 done
