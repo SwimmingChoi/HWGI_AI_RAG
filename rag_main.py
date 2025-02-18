@@ -5,6 +5,8 @@ from modules.sparse_retrieval import BM25Retriever
 from modules.qa_chain import QAChain
 from modules.file_saver import ExcelSaver, JsonSaver
 
+from langchain.retrievers import EnsembleRetriever
+
 import pandas as pd
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -71,6 +73,32 @@ def main():
             faiss_index_path=faiss_index_path
         )
         retriever = embedding_service.create_or_load_vectorstore(docs)
+        
+    elif retrieval_type == 'hybrid':
+        retrieversp = BM25Retriever(docs) #tokenizer=config['retrieval']['tokenizer']
+        faiss_index_path = config['dataset']['document'].replace(
+            '.json',
+            f"_{config['dense_model']['model_type']}_" +
+            ('chunk.bin' if config['preprocessing']['chunking'] else 'full.bin')
+        )
+        embedding_service = CustomEmbeddings(
+            model_type=config['dense_model']['model_type'],
+            model_path=config['dense_model']['model_cache'],
+            device=device,
+            embedding_config=config,
+            faiss_index_path=faiss_index_path,
+            #index_type=config['dense_model']['index_type']
+        )
+        retrieverde = embedding_service.create_or_load_vectorstore(docs)
+        retrieverde = retrieverde.as_retriever(search_kwargs={
+            "k": config['retrieval']['top_k'],
+            "search_type": config['retrieval']['search_type']
+        })
+        retriever = EnsembleRetriever(
+            retrievers=[retrieversp, retrieverde],
+            weights=[0.5, 0.5]
+        )
+
     else:
         raise ValueError("Unsupported retrieval type")
     
@@ -111,10 +139,14 @@ def main():
         save_results = {}
         logger.info("새로운 결과 파일을 생성합니다.")
 
+
     # 새로운 키 정의
+    retrieval_model = embedding_service.model_type if retrieval_type == 'dense' else (
+        'bm25' if retrieval_type == 'sparse' else f'{embedding_service.model_type}+bm25'
+        )
     new_key = (
         f"{retrieval_type}_"
-        f"{embedding_service.model_type if retrieval_type == 'dense' else 'bm25'}_"
+        f"{retrieval_model}_"
         f"{query_translation}_"
         f"{chunking}_"
         f"{reranker}"
@@ -132,7 +164,8 @@ def main():
                 logger.info(f"중복된 키 '{new_key}'가 질문 번호 {num}에 이미 존재합니다. 추가하지 않습니다.")
                 continue
             else:
-                result = qa_chain.multi_step_qa(question, reset_memory=True)
+                # result = qa_chain.multi_step_qa(question, reset_memory=True)
+                result = qa_chain.process_question(question, reset_memory=True)
                 end_time = time()
                 execution_time = end_time - start_time
                 logger.info(f"질문 번호 {num}의 소요 시간: {execution_time}초")
@@ -142,7 +175,8 @@ def main():
                 logger.info(f"'{new_key}'가 질문 번호 {num}에 추가되었습니다.")
         else:
             # 새로운 질문 추가
-            result = qa_chain.multi_step_qa(question, reset_memory=True)
+            # result = qa_chain.multi_step_qa(question, reset_memory=True)
+            result = qa_chain.process_question(question, reset_memory=True)
             end_time = time()
             execution_time = end_time - start_time
             logger.info(f"질문 번호 {num}의 소요 시간: {execution_time}초")

@@ -51,8 +51,9 @@ class QAChain:
 
         retriever_options = {
             "sparse": lambda: retriever if use_reranker else retriever.as_retriever(search_kwargs={"k": top_k}),
-            "dense": lambda: retriever.as_retriever(search_type="similarity", search_kwargs={"k": top_k})
-        }
+            "dense": lambda: retriever.as_retriever(search_type="similarity", search_kwargs={"k": top_k}),
+            "hybrid": lambda: retriever
+            }
 
         try:
             self.active_retriever = retriever_options[search_type]()
@@ -124,13 +125,14 @@ class QAChain:
         while n < 5:
             result = self.process_question(question, reset_memory)
             relevance_score = self.relevance_grader.grade(result['question'], result['answer'])
-            print(relevance_score)
             if relevance_score[0] == True:
                 return result
             else:
-                print(f"오답입니다. 답변 생성을 다시 시도합니다. {n+1}번째 시도")
                 n += 1
-        return result
+                if n == 5:
+                    print("5번 시도 후 종료.")
+                    return result
+                print(f"오답입니다. {relevance_score[1]} 답변 생성을 다시 시도합니다. {n}번째 시도")
 
         
     def process_question(self, question: str, reset_memory: bool = False) -> dict:
@@ -149,6 +151,8 @@ class QAChain:
         else:
             if self.query_translation_type == "QueryRewrite":
                 question = self.query_rewrite.rewrite(question)
+            else:
+                question = question
             return self._ask_question(
                 question=question,
                 reset_memory=reset_memory

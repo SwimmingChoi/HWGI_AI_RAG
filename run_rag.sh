@@ -9,11 +9,11 @@ SCRIPT="./rag_main.py"
 # SCRIPT="./graph_rag_main.py"
 
 # 가능한 조건 값 정의
-chunking_values="False"
-retrieval_types="dense"
-model_types=("api" "sts")
-reranker_values="False"
-query_translation_values=("HyDE" "QueryRewrite")
+chunking_values=("False")
+retrieval_types=("hybrid")
+model_types=("api")
+reranker_values=("True" "False")
+query_translation_values=("HyDE" "QueryRewrite" "none")
 
 
 # 모든 조합을 반복
@@ -29,7 +29,7 @@ do
         do
           # top_k 값을 조건에 따라 설정
           if [ "$reranker" == "True" ]; then
-            top_k=10
+            top_k=5
           else
             top_k=3
           fi
@@ -43,7 +43,7 @@ do
           # 변경된 config.yaml 출력
           echo "Updated config.yaml:"
           # grep -A 5 "retrieval:" $CONFIG_FILE
-          echo "Running with combination: chunking=$chunking, retrieval_type=$retrieval_type, top_k=$top_k, reranker=$reranker"
+          echo "Running with combination: chunking=$chunking, query_translation=$query_translation, retrieval_type=$retrieval_type, top_k=$top_k, reranker=$reranker"
         
           python $SCRIPT
 
