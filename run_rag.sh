@@ -10,10 +10,10 @@ SCRIPT="./rag_main.py"
 
 # 가능한 조건 값 정의
 chunking_values=("False")
-retrieval_types=("sparse")
-model_types=("api")
+retrieval_types=("dense")
+model_types=("sts")
 reranker_values=("False")
-query_translation_values=( "none") #
+query_translation_values=("HyDE" "QueryRewrite" "None")
 
 
 # 모든 조합을 반복
@@ -53,6 +53,7 @@ do
     done
   done
 done
+
 
 # 종료 시간 측정
 end_time=$(date +%s)

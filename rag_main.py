@@ -173,8 +173,7 @@ def main():
                 logger.info(f"중복된 키 '{new_key}'가 질문 번호 {num}에 이미 존재합니다. 추가하지 않습니다.")
                 continue
             else:
-                # result = qa_chain.multi_step_qa(question, reset_memory=True)
-                result = qa_chain.process_question(question, reset_memory=True)
+                result = qa_chain.multi_step_qa(question, reset_memory=True)
                 end_time = time()
                 execution_time = end_time - start_time
                 logger.info(f"질문 번호 {num}의 소요 시간: {execution_time}초")
@@ -208,8 +207,7 @@ def main():
                 logger.info(f"새 질문 번호 {num}의 결과를 저장했습니다.")
                 continue
             # 새로운 질문 추가
-            # result = qa_chain.multi_step_qa(question, reset_memory=True)
-            result = qa_chain.process_question(question, reset_memory=True)
+            result = qa_chain.multi_step_qa(question, reset_memory=True)
             end_time = time()
             execution_time = end_time - start_time
             logger.info(f"질문 번호 {num}의 소요 시간: {execution_time}초")

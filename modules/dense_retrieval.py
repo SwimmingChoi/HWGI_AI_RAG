@@ -26,7 +26,6 @@ class CustomEmbeddings(Embeddings):
         current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         
         self.model_type = model_type.lower()
-        print(self.model_type)
         self.faiss_index_path = os.path.join(current_dir, "documents", faiss_index_path)
         
         if self.model_type not in ["sts", "api"]:
