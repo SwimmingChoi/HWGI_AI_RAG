@@ -4,6 +4,7 @@ from modules.dense_retrieval import CustomEmbeddings
 from modules.sparse_retrieval import BM25Retriever
 from modules.qa_chain import QAChain
 from modules.file_saver import ExcelSaver, JsonSaver
+from modules.faq import FAQ
 
 from langchain.retrievers import EnsembleRetriever
 
@@ -155,6 +156,14 @@ def main():
     # call json_saver
     json_saver = JsonSaver(output_file)
     
+    #question_dictionary 생성
+    faq_data_path=os.path.join(current_dir, "documents", config['dataset']['faq'])
+    with open(faq_data_path, 'r') as f:
+        faq_data = json.load(f)
+    question_dictionary=[]
+    for i in range(len(faq_data)):
+        question_dictionary.append(faq_data[i]['original_question'])
+    
     # 결과 처리
     for num, question in reference_questions.items():
         start_time = time()
@@ -172,7 +181,31 @@ def main():
                     result, execution_time
                     )
                 logger.info(f"'{new_key}'가 질문 번호 {num}에 추가되었습니다.")
+
         else:
+            #######FAQ#######
+            start_time = time()
+            infaq=FAQ(api_key=config['openai']['api_key'])
+            answer = infaq.run_faq(question=question, question_dictionary=question_dictionary, faq_data=faq_data)
+            if answer!=False:
+                end_time = time()                  
+                save_results[num] = {
+                        "number": num,
+                        "question": question,
+                        "ground truth answer": reference_answers.get(num, ""),
+                        "ground truth answer pages": reference_pages.get(num, []),
+                        "llm response": {
+                        new_key: {
+                            "answer": answer, 
+                            "explanation": answer,                      
+                            "pages": reference_pages.get(num, []),
+                            "page contents": answer,
+                            "time": end_time - start_time
+                        }
+                    },
+                }
+                logger.info(f"새 질문 번호 {num}의 결과를 저장했습니다.")
+                continue
             # 새로운 질문 추가
             result = qa_chain.multi_step_qa(question, reset_memory=True)
             end_time = time()
