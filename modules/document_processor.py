@@ -13,7 +13,7 @@ class DocumentProcessor:
         mode: str = "pdf",
         do_chunking: bool = True,
         chunk_size: int = 1000,
-        chunk_overlap: int = 100
+        chunk_overlap: int = 100,
     ) -> Tuple[List[LangchainDocument], Dict]:
         """
         문서를 로드하고 Langchain 문서로 변환하여 처리하는 함수
@@ -45,7 +45,7 @@ class DocumentProcessor:
                     for doc in documents
                 ]
                 
-            else:
+            elif mode == "json":
                 # JSON 처리
                 with open(os.path.join(current_dir, "documents", file_path), 'r', encoding='utf-8') as f:
                     json_data = json.load(f)
@@ -54,14 +54,31 @@ class DocumentProcessor:
                     logging.warning("JSON 문서가 비어있습니다.")
                     return [], {}
                 
-                langchain_docs = [
-                    LangchainDocument(
-                        page_content=value,
-                        metadata={"page": key}
+                langchain_docs = []
+                for item in json_data:
+                    # 메타데이터 추출
+                    content = "#" + item["Index"] + " " + item["Content"]
+                    metadata = {
+                        "index": item["Index"] if "Index" in item else "",
+                        "page": item["Page"] if "Page" in item else "",
+                        "content": content,
+                        "type": item["Type"] if "Type" in item else "",
+                        "article": item["Article"] if "Article" in item else "",
+                        "part": item["Part"] if "Part" in item else "",
+                        "chapter": item["Chapter"] if "Chapter" in item else "",
+                        "section": item["Section"] if "Section" in item else "",
+                        "table": item["Table"] if "Table" in item else "",
+                        "table_content": item["Table_Content"] if "Table_Content" in item else "",
+                        "source": file_path,
+                        "document_type": "json"
+                    }
+                    
+                    # 문서 내용과 메타데이터를 포함한 Document 객체 생성
+                    doc = LangchainDocument(
+                        page_content=content,
+                        metadata=metadata
                     )
-                    for key, value in json_data.items()
-                ]
-            
+                    langchain_docs.append(doc)
             # Text Chunking
             if do_chunking:
                 text_splitter = RecursiveCharacterTextSplitter(
@@ -70,6 +87,16 @@ class DocumentProcessor:
                     length_function=len,
                 )
                 processed_docs = text_splitter.split_documents(langchain_docs)
+                
+                # 청크에 대한 메타데이터 추가
+                for i, doc in enumerate(processed_docs):
+                    doc.metadata.update({
+                        "chunk_index": i,
+                        "chunk_size": chunk_size,
+                        "chunk_overlap": chunk_overlap,
+                        "total_chunks": len(processed_docs)
+                    })
+                
                 logging.info(f"문서 청크 분할 완료: {len(processed_docs)} 청크 생성")
             else:
                 processed_docs = langchain_docs
@@ -78,8 +105,17 @@ class DocumentProcessor:
             # Metadata Mapping
             doc_metadata = {
                 i: {
+                    "index": doc.metadata.get("index", "Unknown"),
+                    "page": doc.metadata.get("page", "Unknown"),
                     "content": doc.page_content,
-                    "page": doc.metadata.get('page', 'Unknown')
+                    "type": doc.metadata.get("type", "Unknown"),
+                    "article": doc.metadata.get("article", "Unknown"),
+                    "part": doc.metadata.get("part", "Unknown"),
+                    "chapter": doc.metadata.get("chapter", "Unknown"),
+                    "section": doc.metadata.get("section", "Unknown"),
+                    "table": doc.metadata.get("table", "Unknown"),
+                    "table_content": doc.metadata.get("table_content", "Unknown"),
+                    
                 }
                 for i, doc in enumerate(processed_docs)
             }

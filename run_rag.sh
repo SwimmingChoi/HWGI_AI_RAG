@@ -10,10 +10,10 @@ SCRIPT="./rag_main.py"
 
 # 가능한 조건 값 정의
 chunking_values=("False")
-retrieval_types=("dense")
+retrieval_types=("hybrid")
 model_types=("sts")
-reranker_values=("False")
-query_translation_values=("HyDE" "QueryRewrite" "None")
+reranker_values=("True")
+query_translation_values=("QueryRewrite")
 
 
 # 모든 조합을 반복
@@ -29,9 +29,9 @@ do
         do
           # top_k 값을 조건에 따라 설정
           if [ "$reranker" == "True" ]; then
-            top_k=5
+            top_k=10
           else
-            top_k=3
+            top_k=10
           fi
 
           sed -i "s/^  chunking:.*$/  chunking: $chunking/" $CONFIG_FILE
@@ -53,7 +53,6 @@ do
     done
   done
 done
-
 
 # 종료 시간 측정
 end_time=$(date +%s)

@@ -128,5 +128,5 @@ def bleu_evaluator(reference: str, candidate: str) -> dict:
     return bleu_score
 
 def fail_rate_evaluator(candidate: str) -> dict:
-    fail_sentence = "죄송합니다. 해당 질문에 대한 답변을 찾을 수 없습니다."
+    fail_sentence = "죄송합니다, 답변을 찾을 수 없습니다."
     return 1 if fail_sentence in candidate else 0

@@ -14,7 +14,7 @@ class FAQ:
 입력문장: {input_sentence}
 question_dictionary: {question_dictionary}
 
-짧게 숫자로 답변해주세요.
+반드시 짧게 숫자로만 답변해주세요.
 의미적으로 동일한 문장이 없다면 -1을,
 동일한 문장이 있다면 해당 문장의 인덱스를 반환해주세요.
 동일한 문장이 여러개 있다면 가장 유사한 문장의 인덱스를 반환해주세요. """
@@ -24,7 +24,7 @@ question_dictionary: {question_dictionary}
             messages=[
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.1,  # 일관된 결과를 위해 낮은 temperature 사용
+            temperature=0.2,  # 일관된 결과를 위해 낮은 temperature 사용
         )
         # 응답 확인
         answer= int(response.choices[0].message.content.strip().lower())

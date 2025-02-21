@@ -7,13 +7,14 @@ from langchain.schema.runnable import RunnablePassthrough, RunnableLambda
 from langchain_core.output_parsers import StrOutputParser
 from langchain.schema import Document
 
-import logging
-from typing import Optional, Union
+from typing import Optional, Union, Annotated, TypedDict
+
 from modules.query_translation import HyDE, QueryRewrite
 from modules.reranker import Reranker
 from modules.gpt4o_judge import RelevanceGrader
-from typing import Annotated, TypedDict
+from utils.logger import setup_logger
 
+import json
 
 class QAChain:
     def __init__(
@@ -39,7 +40,7 @@ class QAChain:
             model_name=openai_config['gpt_model'],
             api_key=openai_config['api_key'],
             max_tokens=1024,
-            temperature=0.5
+            temperature=0.2
         )
         self.hyde = HyDE(openai_config)
         self.query_rewrite = QueryRewrite(openai_config)
@@ -59,7 +60,7 @@ class QAChain:
             self.active_retriever = retriever_options[search_type]()
             
         except KeyError:
-            raise ValueError("search_type은 'sparse' 또는 'dense'여야 합니다.")
+            raise ValueError("search_type은 'sparse' 또는 'dense' 또는 'hybrid' 여야 합니다.")
 
 
         # Reranker 적용
@@ -78,6 +79,7 @@ class QAChain:
         )
         
         self.qa_chain = self._create_qa_chain()
+        self.logger = setup_logger()
 
     def _create_qa_chain(self):
         condense_question_prompt = ChatPromptTemplate.from_messages([
@@ -87,16 +89,11 @@ class QAChain:
         ])
 
         qa_prompt = ChatPromptTemplate.from_messages([
-            ("system", """당신은 친절한 보험 전문 AI 어시스턴트입니다.
-             
-             당신에게 보험 관련 질문이 주어질 것입니다.
-             
-             주어진 규칙을 지키며 답변을 생성해주세요:
-             - 반드시 주어진 관련 정보를 바탕으로 사용자의 질문에 답변해주세요.
-             - 이전 대화 내용을 참고하여 일관성 있게 대답하세요.
-             - 추측하거나 거짓 정보를 제공하지 마세요. 모르면 모른다고 답변해야합니다.
-             - 관련 정보에 포함된 정보가 없을 경우, "죄송합니다. 해당 질문에 대한 답변을 찾을 수 없습니다."라고 말씀해 주세요.
-            """),
+            ("system", """
+주어진 보험문서를 바탕으로 사용자의 질문에 답변해주세요. 
+보험문서 내 답변이 존재합니다. 
+보험문서를 자세히 읽고 추론하여 정확한 답변을 제공해주세요.
+답변을 보험문서 내에서 추론할 수 없을 경우, '죄송합니다, 답변을 찾을 수 없습니다.'라고 답변해주세요."""),
             ("user", "{input}"),
             ("assistant", "관련 정보: {context}")
         ])
@@ -109,13 +106,54 @@ class QAChain:
 
         document_chain = create_stuff_documents_chain(
             llm=self.llm,
-            prompt=qa_prompt
+            prompt=qa_prompt,
         )
 
         return create_retrieval_chain(
             retriever_chain,
             document_chain,
         )
+    
+    def _analyze_query_for_metadata(self, query: str) -> dict:
+        """
+        쿼리를 분석하여 관련된 메타데이터 필터를 생성
+        """
+        system_prompt = """당신은 자동차 관련 보험 약관 문서서 전문가입니다. 
+        사용자의 질문을 분석하여 관련된 문서의 메타데이터를 찾아주세요.
+        응답은 반드시 JSON 형식이어야 합니다.""".strip()
+        
+        user_prompt = f"""다음 질문을 분석하여 관련된 메타데이터를 찾아주세요:
+        질문: {query}
+        
+        메타데이터 필드: Type('특별약관','법규해설집','별표와 붙임','보통약관' 중 1개), Index(관련 키워드)
+        
+        JSON 형식으로 응답: {{"Type": "선택된타입", "Index": "키워드"}}
+        관련 없으면 빈 딕셔너리 반환""".strip()
+        
+        try:
+            response = self.llm.chat.completions.create(
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ],
+                model=self.model,
+                temperature=0
+            )
+            
+            metadata_filter = json.loads(response.choices[0].message.content)
+            self.logger.info(f"메타데이터 검색 필터: {metadata_filter}")
+            
+            # 메타데이터로 1차 필터링
+            if self.search_type == 'dense':
+                filtered_docs = self.retriever.similarity_search_with_score(
+                    query,
+                    k=self.top_k * 2,  # 더 많은 문서 검색
+                    filter=metadata_filter
+                )
+            return metadata_filter
+        except Exception as e:
+            self.logger.warning(f"메타데이터 필터 생성 실패: {str(e)}")
+            return {}
         
     def multi_step_qa(self, question: str, reset_memory: bool = False):
         """
@@ -130,12 +168,12 @@ class QAChain:
             else:
                 n += 1
                 if n == 5:
-                    print("5번 시도 후 종료.")
+                    self.logger.info(f"오답입니다. {relevance_score[1]} 5번 시도를 마치고 종료합니다.")
                     return result
-                print(f"오답입니다. {relevance_score[1]} 답변 생성을 다시 시도합니다. {n}번째 시도")
+                self.logger.info(f"오답입니다. {relevance_score[1]} 답변 생성을 다시 시도합니다. {n}번째 시도")
 
         
-    def process_question(self, question: str, reset_memory: bool = False) -> dict:
+    def process_question(self, question: str, reset_memory: bool = True) -> dict:
         """
         query_translation_type에 따라 적절한 질문 처리 함수를 호출하는 메서드
         """    
@@ -165,7 +203,7 @@ class QAChain:
 
             if reset_memory:
                 self.memory.clear()
-            
+
             # 이미 생성된 가상 문서를 직접 retriever에 전달
             retrieved_docs = self.active_retriever.invoke(generated_docs_for_retrieval)
             
@@ -201,7 +239,7 @@ class QAChain:
             return result
         
         except Exception as e:
-            logging.error(f"질문 처리 중 오류 발생: {str(e)}")
+            self.logger.error(f"질문 처리 중 오류 발생: {str(e)}")
             raise
     
     def _ask_question(self, question: str, reset_memory: bool = False) -> dict:
@@ -213,7 +251,7 @@ class QAChain:
         
             if reset_memory:
                 self.memory.clear()
-
+            
             response = self.qa_chain.invoke({
                 "chat_history": self.memory.chat_memory.messages if hasattr(self.memory, 'chat_memory') else [],
                 "input": normalized_question
@@ -245,5 +283,5 @@ class QAChain:
             return result
             
         except Exception as e:
-            logging.error(f"질문 처리 중 오류 발생: {str(e)}")
+            self.logger.error(f"질문 처리 중 오류 발생: {str(e)}")
             raise
