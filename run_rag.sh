@@ -10,10 +10,17 @@ SCRIPT="./rag_main.py"
 
 # 가능한 조건 값 정의
 chunking_values=("False")
+<<<<<<< HEAD
 retrieval_types=("hybrid")
 model_types=("sts")
 reranker_values=("False")
 query_translation_values=("hyde") #
+=======
+retrieval_types=("sparse")
+model_types=("api")
+reranker_values=("False")
+query_translation_values=( "none") #
+>>>>>>> d691efa331f6e657141382143838d3108100c8f4
 
 
 # 모든 조합을 반복

@@ -47,4 +47,8 @@ question_dictionary: {question_dictionary}
                 return False
         except Exception as e:
             print(f"오류 발생: {str(e)}")
+<<<<<<< HEAD
             return False
+=======
+            return False
+>>>>>>> d691efa331f6e657141382143838d3108100c8f4
