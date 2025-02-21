@@ -52,26 +52,12 @@ def main():
         username=config['graph_rag']['NEO4J_USERNAME'],
         password=config['graph_rag']['NEO4J_PASSWORD'],
     )
-
-
-    data_loader = f"LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/gw16/for_data/main/{config['dataset']['graph_document']}' AS row"
+    
+    data_loader = f"LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/esthyj/hwgi/master/{config['dataset']['graph_document']}' AS row"
     # Cypher 쿼리: CSV 파일에서 데이터 로드
     q_load_data = data_loader + """
-
-    MERGE (p:Product_Name {name: row.Product_Name})
-    MERGE (c:Clause_Name {name: row.Clause_Name})
-    MERGE (ch:Chapter {name: row.Chapter})
-    MERGE (a:Article {name: row.Article})
-    MERGE (s:Subsection {name: row.Subsection})
-    MERGE (fc:Content {text: row.Full_Content})
-    MERGE (pg:Page {number: row.Page})
-
-    MERGE (p)-[:포함하다]->(c)
-    MERGE (c)-[:포함하다]->(ch)
-    MERGE (ch)-[:포함하다]->(a)
-    MERGE (a)-[:포함하다]->(s)
-    MERGE (s)-[:설명하다]->(fc)
-    MERGE (fc)-[:구성하다]->(pg)
+MERGE (t:Title {name: row.Title})
+MERGE (c:Content {number: CASE WHEN row.Content IS NOT NULL THEN row.Content ELSE 'unknown' END})
     """
 
     graph.query(q_load_data)

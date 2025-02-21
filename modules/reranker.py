@@ -5,7 +5,7 @@ from langchain.schema import BaseRetriever
 
 
 class Reranker:
-    def __init__(self, base_retriever: BaseRetriever, reranker_model: str = "BAAI/bge-reranker-base", reranker_top_k: int = 3):
+    def __init__(self, base_retriever: BaseRetriever, reranker_model: str = "Dongjin-kr/ko-reranker", reranker_top_k: int = 20):
         """
         Reranker 초기화
         :param base_retriever: BaseRetriever를 구현한 객체

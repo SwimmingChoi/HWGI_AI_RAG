@@ -39,7 +39,7 @@ class QAChain:
             model_name=openai_config['gpt_model'],
             api_key=openai_config['api_key'],
             max_tokens=1024,
-            temperature=0.5
+            temperature=0.2
         )
         self.hyde = HyDE(openai_config)
         self.query_rewrite = QueryRewrite(openai_config)
@@ -87,18 +87,13 @@ class QAChain:
         ])
 
         qa_prompt = ChatPromptTemplate.from_messages([
-            ("system", """당신은 친절한 보험 전문 AI 어시스턴트입니다.
-             
-             당신에게 보험 관련 질문이 주어질 것입니다.
-             
-             주어진 규칙을 지키며 답변을 생성해주세요:
-             - 반드시 주어진 관련 정보를 바탕으로 사용자의 질문에 답변해주세요.
-             - 이전 대화 내용을 참고하여 일관성 있게 대답하세요.
-             - 추측하거나 거짓 정보를 제공하지 마세요. 모르면 모른다고 답변해야합니다.
-             - 관련 정보에 포함된 정보가 없을 경우, "죄송합니다. 해당 질문에 대한 답변을 찾을 수 없습니다."라고 말씀해 주세요.
-            """),
+            ("system", """
+주어진 보험문서를 바탕으로 사용자의 질문에 답변해주세요. 
+보험문서 내 답변이 존재합니다. 
+보험문서를 자세히 읽고 추론하여 정확한 답변을 제공해주세요.
+답변을 보험문서 내에서 추론할 수 없을 경우, '모르겠습니다.'라고 답변해주세요."""),
+            ("assistant", "보험문서: {context}"),
             ("user", "{input}"),
-            ("assistant", "관련 정보: {context}")
         ])
 
         retriever_chain = create_history_aware_retriever(
@@ -221,7 +216,7 @@ class QAChain:
             
             context_docs = response.get("context", [])
             context_pages = [
-                doc.metadata.get('page', 'Unknown') 
+                doc.metadata.get('페이지', 'Unknown') 
                 for doc in context_docs
             ]
             context_pages = [int(pages) for pages in context_pages]
@@ -237,6 +232,7 @@ class QAChain:
                 'context_pages': context_pages,
                 'context_pages_content': context_pages_content
             }
+            
             
             if self.memory:
                 self.memory.chat_memory.add_user_message(question)

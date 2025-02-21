@@ -11,9 +11,9 @@ SCRIPT="./rag_main.py"
 # 가능한 조건 값 정의
 chunking_values=("False")
 retrieval_types=("hybrid")
-model_types=("api")
-reranker_values=("True" "False")
-query_translation_values=("HyDE" "QueryRewrite" "none")
+model_types=("sts")
+reranker_values=("False")
+query_translation_values=("hyde") #
 
 
 # 모든 조합을 반복
