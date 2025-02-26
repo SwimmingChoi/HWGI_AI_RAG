@@ -47,11 +47,11 @@ class QueryRewrite:
 
 처음부터 단순히 재구성된 질문을 쓰지 마십시오."""
 
-        answers = f"질문: {question}"
-        
-        rewritten_question = self.model.invoke([
+        original_question = f"질문: {question}"
+        input_prompt = [
             {"role": "system", "content": rewrite_instructions},
-            {"role": "user", "content": answers}
-        ])
-
+            {"role": "user", "content": original_question}
+        ]
+        # print(input_prompt)
+        rewritten_question = self.model.invoke(input_prompt)
         return rewritten_question['answer']
