@@ -114,50 +114,11 @@ class QAChain:
             document_chain,
         )
     
-    def _analyze_query_for_metadata(self, query: str) -> dict:
-        """
-        쿼리를 분석하여 관련된 메타데이터 필터를 생성
-        """
-        system_prompt = """당신은 자동차 관련 보험 약관 문서서 전문가입니다. 
-        사용자의 질문을 분석하여 관련된 문서의 메타데이터를 찾아주세요.
-        응답은 반드시 JSON 형식이어야 합니다.""".strip()
-        
-        user_prompt = f"""다음 질문을 분석하여 관련된 메타데이터를 찾아주세요:
-        질문: {query}
-        
-        메타데이터 필드: Type('특별약관','법규해설집','별표와 붙임','보통약관' 중 1개), Index(관련 키워드)
-        
-        JSON 형식으로 응답: {{"Type": "선택된타입", "Index": "키워드"}}
-        관련 없으면 빈 딕셔너리 반환""".strip()
-        
-        try:
-            response = self.llm.chat.completions.create(
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt}
-                ],
-                model=self.model,
-                temperature=0
-            )
-            
-            metadata_filter = json.loads(response.choices[0].message.content)
-            self.logger.info(f"메타데이터 검색 필터: {metadata_filter}")
-            
-            # 메타데이터로 1차 필터링
-            if self.search_type == 'dense':
-                filtered_docs = self.retriever.similarity_search_with_score(
-                    query,
-                    k=self.top_k * 2,  # 더 많은 문서 검색
-                    filter=metadata_filter
-                )
-            return metadata_filter
-        except Exception as e:
-            self.logger.warning(f"메타데이터 필터 생성 실패: {str(e)}")
-            return {}
-        
     def multi_step_qa(self, question: str, reset_memory: bool = False):
         """
-        답변 평가 -> 조건 미충족 시 재시도 (n = 5까지)
+        답변과 질문의 Relevance 평가
+        Relevance 값이 True일 경우 종료
+        조건 미충족 시 재시도 (n = 5까지)
         """
         n = 0
         while n < 5:
