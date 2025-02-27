@@ -116,3 +116,7 @@ def bleu_evaluator(reference: str, candidate: str) -> dict:
         smoothing_function=SmoothingFunction().method1)
 
     return bleu_score
+
+def fail_rate_evaluator(candidate: str) -> dict:
+    fail_sentence = "모르겠습니다."
+    return 1 if fail_sentence in candidate else 0
