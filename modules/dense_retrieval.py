@@ -2,14 +2,11 @@ from langchain_core.embeddings import Embeddings
 from sentence_transformers import SentenceTransformer
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
-
 from typing import List, Union, Optional, Dict
 from tqdm import tqdm
-
 import torch
 import os
 import logging
-
 class CustomEmbeddings(Embeddings):
     def __init__(
         self,
@@ -28,14 +25,11 @@ class CustomEmbeddings(Embeddings):
         :param faiss_index_path: FAISS 인덱스 저장 경로
         """
         current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        
         self.model_type = model_type.lower()
         self.faiss_index_path = os.path.join(current_dir, "documents", faiss_index_path)
         self.batch_size = batch_size
-        
         if self.model_type not in ["sts", "api"]:
             raise ValueError("model_type must be either 'sts' or 'api'")
-            
         if self.model_type == "sts":
             self.model = SentenceTransformer(
                 model_name_or_path = embedding_config['dense_model']['model_name'],
@@ -46,7 +40,6 @@ class CustomEmbeddings(Embeddings):
                 api_key=embedding_config['openai']['api_key'],
                 model=embedding_config['openai']['embedding_model'],
             )
-    
     def embed_documents(self, texts: List[str]) -> List[List[float]]:
         if self.model_type == "sts":
             embeddings = []
@@ -63,7 +56,6 @@ class CustomEmbeddings(Embeddings):
             return embeddings
         else:
             return self.model.embed_documents(texts)
-    
     def embed_query(self, text: str) -> List[float]:
         if self.model_type == "sts":
             with torch.no_grad():
@@ -75,7 +67,6 @@ class CustomEmbeddings(Embeddings):
     def create_or_load_vectorstore(self, documents: Optional[List] = None, metadata: Optional[Dict] = None) -> FAISS:
         """
         FAISS 벡터 DB를 생성하거나 로드합니다.
-        
         Args:
             documents: 문서 리스트 (새로 생성할 경우에만 필요)
             metadata: 문서 메타데이터 딕셔너리
@@ -103,14 +94,14 @@ class CustomEmbeddings(Embeddings):
                 
                 for i in tqdm(range(0, total_docs, batch_size), desc="Creating vector DB"):
                     batch_docs = documents[i:i + batch_size]
-                    
+
                     # 각 문서에 메타데이터 추가
                     if metadata:
                         for doc in batch_docs:
                             doc_idx = documents.index(doc)
                             if doc_idx in metadata:
                                 doc.metadata.update(metadata[doc_idx])
-                    
+
                     if vectorstore is None:
                         vectorstore = FAISS.from_documents(
                             documents=batch_docs,
@@ -122,14 +113,10 @@ class CustomEmbeddings(Embeddings):
                             embedding=self
                         )
                         vectorstore.merge_from(temp_vectorstore)
-                        
                     torch.cuda.empty_cache()
-                    
                 vectorstore.save_local(self.faiss_index_path)
                 logging.info(f"FAISS 벡터 DB 저장 완료: {self.faiss_index_path}")
-                
             return vectorstore
-            
         except Exception as e:
             logging.error(f"벡터 DB 처리 중 오류 발생: {str(e)}")
             raise
@@ -143,7 +130,6 @@ class CustomEmbeddings(Embeddings):
     ) -> List[List[tuple]]:
         """
         메타데이터 필터링을 포함한 유사도 검색
-        
         Args:
             vectorstore: FAISS 벡터스토어
             query: 단일 문자열 또는 쿼리 문자열 리스트
