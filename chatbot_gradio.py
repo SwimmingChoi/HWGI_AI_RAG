@@ -23,6 +23,8 @@ def main():
 
     print("general insurace uploading....")
 
+
+    # 문서 처리
     doc_processor = DocumentProcessor()
     docs, metadata = doc_processor.load_and_process_documents(
         file_path=config['dataset']['document'],
@@ -32,7 +34,8 @@ def main():
         chunk_overlap=config['preprocessing']['chunk_overlap']
     )
 
-    ##retriever
+
+    # hybrid retriever
     retrieversp = BM25Retriever(docs) #tokenizer=config['retrieval']['tokenizer']
     faiss_index_path = config['dataset']['document'].replace(
         '.json',
@@ -51,12 +54,13 @@ def main():
         "k": config['retrieval']['top_k'],
         "search_type": config['retrieval']['search_type']
     })
-
     retriever_hybrid = EnsembleRetriever(
         retrievers=[retrieversp, retrieverde],
         weights=[0.4, 0.6])
     print("retrieval type saved")
 
+
+    # qa-chain
     qa_chain = QAChain(
         openai_config=config['openai'],
         retriever= retriever_hybrid,
@@ -75,6 +79,16 @@ def main():
 '''
 
     def chat(message, history):
+        """
+        사용자 질문을 처리하고 챗봇의 답변을 반환하는 함수
+        
+        Parameters:
+            message (str): 사용자 질문
+            history (list): 이전 대화 기록
+            
+        Returns:
+            list: 업데이트된 대화 기록 (사용자 질문과 챗봇 답변 포함)
+        """
         total_result = qa_chain.process_question(message, reset_memory=True)
         answer_result=total_result['answer']
         if '모르겠습니다' in answer_result:
@@ -82,6 +96,7 @@ def main():
         else:
             return history + [[message, answer_result]]
     
+    # 대화 인터페이스
     with gr.Blocks(css="""
         .message { font-size: 1.2em !important; }
         .message-wrap { 
