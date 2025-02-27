@@ -1,3 +1,7 @@
+# [2팀]
+# GPT-4o 평가 모듈 저장 파일
+# 정확성, 관련성, 근거성, 추출 관련성 평가 함수 저장
+
 import os
 import collections
 import pandas as pd
@@ -18,7 +22,6 @@ class CorrectnessGrade(TypedDict):
 
 class CorrectnessGrader:
     def __init__(self, openai_config: dict):
-        # 초기화 시 config 값을 저장하고 OpenAI 모델을 설정
         self.openai_config = openai_config
         self.grader_llm = ChatOpenAI(
             model=openai_config['gpt_model'],
@@ -29,7 +32,17 @@ class CorrectnessGrader:
         )
 
     def grade(self, inputs: dict, outputs: dict, reference_outputs: dict) -> tuple:
-        # 학생 답변을 채점하는 메서드
+        """
+        [2팀] 정답과 비교하여 학생의 답변이 사실적으로 정확한지 평가하는 함수입니다.
+        
+        Parameters:
+        inputs (dict): 질문
+        outputs (dict): 학생 답변
+        reference_outputs (dict): 정답
+        
+        Returns:
+        tuple: 정답 여부(correct)와 설명(explanation)
+        """
         correctness_instructions = """당신은 문제를 채점하는 교사입니다. 
 
         질문, 정답, 그리고 학생 답변이 주어질 것입니다.
@@ -72,7 +85,6 @@ class RelevanceGrade(TypedDict):
 
 class RelevanceGrader:
     def __init__(self, openai_config: dict):
-        # 초기화 시 config 값을 저장하고 OpenAI 모델을 설정
         self.openai_config = openai_config
         self.grader_llm = ChatOpenAI(
             model=openai_config['gpt_model'],
@@ -83,7 +95,16 @@ class RelevanceGrader:
         )
     
     def grade(self, inputs: dict, outputs: dict) -> tuple:
-        # 학생 답변을 채점하는 메서드
+        """
+        [2팀] 학생 답변이 질문에 대해 적절한지 평가하는 함수입니다.
+
+        Parameters:
+        inputs (dict): 질문
+        outputs (dict): 학생 답변
+        
+        Returns:
+        tuple: 관련성 여부(relevant)와 설명(explanation)
+        """
         relevance_instructions="""당신은 문제를 채점하는 교사입니다.
 
         질문과 학생 답변이 주어질 것입니다.
@@ -121,7 +142,6 @@ class GroundedGrade(TypedDict):
 
 class GroundedGrader:
     def __init__(self, openai_config: dict):
-        # 초기화 시 config 값을 저장하고 OpenAI 모델을 설정
         self.openai_config = openai_config
         self.grader_llm = ChatOpenAI(
             model=openai_config['gpt_model'],
@@ -132,7 +152,16 @@ class GroundedGrader:
         )
     
     def grade(self, inputs: str, contents: list) -> tuple:
-        # 학생 답변을 채점하는 메서드
+        """
+        [2팀] 학생 답변이 사실에 근거하고 있는지 평가하는 함수입니다.
+
+        Parameters:
+        inputs (str): 학생 답변
+        contents (list): 사실
+        
+        Returns:
+        tuple: 근거 여부(grounded)와 설명(explanation)
+        """
         grounded_instructions = """당신은 문제를 채점하는 교사입니다. 
 
         사실과 학생 답변이 주어질 것입니다.
@@ -171,7 +200,6 @@ class RetrievalRelevanceGrade(TypedDict):
 
 class RetrievalRelevanceGrader:
     def __init__(self, openai_config: dict):
-        # 초기화 시 config 값을 저장하고 OpenAI 모델을 설정
         self.openai_config = openai_config
         self.grader_llm = ChatOpenAI(
             model=openai_config['gpt_model'],
@@ -182,7 +210,16 @@ class RetrievalRelevanceGrader:
         )
 
     def grade(self, inputs: str, contents: list) -> tuple:
-        # 학생 답변을 채점하는 메서드
+        """
+        [2팀] 학생 답변이 사실에 근거하고 있는지 평가하는 함수입니다.
+
+        Parameters:
+        inputs (str): 학생 답변
+        contents (list): 사실
+        
+        Returns:
+        tuple: 관련성 여부(relevant)와 설명(explanation)
+        """
         retrieval_relevance_instructions = """당신은 문제를 채점하는 교사입니다.
 
         질문과 학생이 제공한 사실이 주어질 것입니다.

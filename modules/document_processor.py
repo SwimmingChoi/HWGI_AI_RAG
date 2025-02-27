@@ -49,8 +49,9 @@ class DocumentProcessor:
                 for item in json_data:
                     # 전체내용이 있는 경우만 처리
                     if item.get("내용"):
+                        # [2팀] 본문 내용에 목차와 테이블 내용 추가
                         content = '#' + item["목차"] + "  " + item["내용"] + " " + str(item["테이블내용"])
-                        # 메타데이터 설정
+                        # [2팀] 3팀의 전처리 문서에 맞게 메타데이터 설정
                         metadata = {
                             "페이지": item.get("페이지", "Unknown"),
                             "목차": item.get("목차", ""),
@@ -77,7 +78,7 @@ class DocumentProcessor:
                 )
                 processed_docs = text_splitter.split_documents(langchain_docs)
                 
-                # 청크에 대한 메타데이터 추가
+                # [2팀] 청크에 대한 메타데이터 추가
                 for i, doc in enumerate(processed_docs):
                     doc.metadata.update({
                         "chunk_index": i,
@@ -90,7 +91,8 @@ class DocumentProcessor:
             else:
                 processed_docs = langchain_docs
                 logging.info(f"청크 분할 없이 처리 완료: {len(processed_docs)} 문서")
-            # Metadata Mapping
+                
+            # [2팀] 3팀의 전처리된 문서에 맟게 Metadata Mapping
             doc_metadata = {
                 i: {
                     "페이지": doc.metadata.get('페이지', 'Unknown'),

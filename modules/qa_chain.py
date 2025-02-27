@@ -1,3 +1,7 @@
+# [2팀]
+# process_question 함수 추가 - query_translation_type(HyDE, QueryRewrite, None)에 따라 질문을 처리하는 방법 선택
+# multi_step_qa 함수 추가 - 질문과 관련 있는 답변 생성 시까지 RAG 반복복
+
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.memory import ConversationBufferMemory
@@ -26,7 +30,8 @@ class QAChain:
         top_k: int = 3,
         use_reranker: bool = False,
         reranker_model: str = "BAAI/bge-reranker-base",
-        reranker_top_k: int = 3
+        reranker_top_k: int = 3,
+        num: int = 5
     ):
         """
         :param openai_config: OpenAI 설정
@@ -45,6 +50,7 @@ class QAChain:
         self.hyde = HyDE(openai_config)
         self.query_rewrite = QueryRewrite(openai_config)
         self.relevance_grader = RelevanceGrader(openai_config)
+        self.num = num
         
         # 검색 방식에 따른 retriever 설정
         if not retriever:
@@ -116,28 +122,43 @@ class QAChain:
     
     def multi_step_qa(self, question: str, reset_memory: bool = False):
         """
-        답변과 질문의 Relevance 평가
-        Relevance 값이 True일 경우 종료
-        조건 미충족 시 재시도 (n = 5까지)
+        [2팀] 질문에 대해 다단계로 답변을 생성하고, 생성된 답변의 관련성을 평가합니다.
+        - 답변의 관련성(Relevance)이 True일 경우 즉시 종료하고 답변을 반환합니다.
+        - 관련성이 False일 경우, 최대 5번까지 재시도하여 답변을 개선합니다.
+        
+        Parameters:
+        question (str): 사용자의 질문
+        reset_memory (bool): 이전 상태를 리셋할지 여부 (기본값 False)
+
+        Returns:
+        dict: 질문과 답변 결과 (관련성 평가 포함)
         """
         n = 0
-        while n < 5:
-            result = self.process_question(question, reset_memory)
+        while n < self.num:
+            result = self._process_question(question, reset_memory)
             relevance_score = self.relevance_grader.grade(result['question'], result['answer'])
             if relevance_score[0] == True:
                 return result
             else:
                 n += 1
-                if n == 5:
-                    self.logger.info(f"오답입니다. {relevance_score[1]} 5번 시도를 마치고 종료합니다.")
+                if n == self.num:
+                    self.logger.info(f"오답입니다. {relevance_score[1]} {n}번 시도를 마치고 종료합니다.")
                     return result
                 self.logger.info(f"오답입니다. {relevance_score[1]} 답변 생성을 다시 시도합니다. {n}번째 시도")
 
         
-    def process_question(self, question: str, reset_memory: bool = True) -> dict:
+    def _process_question(self, question: str, reset_memory: bool = True) -> dict:
         """
-        query_translation_type에 따라 적절한 질문 처리 함수를 호출하는 메서드
-        """    
+        [2팀] 주어진 질문을 적절한 방식으로 처리하여 답변을 생성하는 함수입니다.
+        query_translation_type(HyDE, QueryRewrite, None)에 따라 질문을 처리하는 방법을 선택합니다.
+        
+        Parameters:
+        question (str): 사용자의 질문
+        reset_memory (bool): 이전 상태를 리셋할지 여부 (기본값 True)
+        
+        Returns:
+        dict: 질문에 대한 답변 결과
+        """
         if self.query_translation_type == "HyDE":
             
             generated_docs_for_retrieval = self.hyde.translate(question)
@@ -158,17 +179,27 @@ class QAChain:
             )
 
     def _ask_question_with_hyde(self, question: str, generated_docs_for_retrieval: str, reset_memory: bool = False) -> dict:
+        """
+        [2팀] HyDE를 위해 생성한 가상문서를 직접 retriever에 전달하여 검색합니다.
         
+        Parameters:
+        question (str): 사용자의 질문
+        generated_docs_for_retrieval (str): HyDE를 위해 생성한 가상문서
+        reset_memory (bool): 이전 상태를 리셋할지 여부 (기본값 False)
+        
+        Returns:
+        dict: 질문과 답변 결과
+        """
         try:
             normalized_question = " ".join(question.strip().split())
 
             if reset_memory:
                 self.memory.clear()
 
-            # 이미 생성된 가상 문서를 직접 retriever에 전달
+            # [2팀] STEP 1. 생성된 가상 문서를 직접 retriever에 전달
             retrieved_docs = self.active_retriever.invoke(generated_docs_for_retrieval)
             
-            # QA 체인에 검색된 문서와 원래 질문을 전달
+            # [2팀] STEP 2. QA 체인에 검색된 문서와 원래 질문을 전달
             response = self.qa_chain.invoke({
                 "chat_history": self.memory.chat_memory.messages if self.memory else [],
                 "input": normalized_question,
@@ -205,7 +236,14 @@ class QAChain:
     
     def _ask_question(self, question: str, reset_memory: bool = False) -> dict:
         """
-        질문을 받아 답변과 참조 문서를 반환하는 함수
+        [2팀] 질문을 받아 답변과 참조 문서를 반환하는 함수입니다.
+        
+        Parameters:
+        question (str): 사용자의 질문
+        reset_memory (bool): 이전 상태를 리셋할지 여부 (기본값 False)
+        
+        Returns:
+        dict: 질문과 답변 결과
         """
         try:
             normalized_question = " ".join(question.strip().split())

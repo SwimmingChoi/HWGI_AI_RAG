@@ -1,10 +1,15 @@
+# [2팀]
+# 모든 조합에 대한 RAG 테스트 스크립트
+# 최종 조합에 대해서는 config.yaml 파일에 저장
+# 해당 스크립트는 test_config.yaml 파일을 사용
+
 #!/bin/bash
 
 # 시작 시간 측정
 start_time=$(date +%s)
 
 # 기본 설정
-CONFIG_FILE="./config/config.yaml"
+CONFIG_FILE="./config/test_config.yaml"
 SCRIPT="./rag_main.py"
 # SCRIPT="./graph_rag_main.py"
 

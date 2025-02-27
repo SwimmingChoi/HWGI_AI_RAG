@@ -1,3 +1,7 @@
+# [2팀]
+# GPT-4o as a Judge 평가를 제외한 나머지 평가 지표가 저장된 모듈
+# 평가 지표: F1, ROUGE-L, SemScore, BLEU, Fail Rate, 소요 시간
+
 from modules.config_loader import load_config
 
 import re
@@ -20,8 +24,7 @@ kiwi_tokenizer = KiwiTokenizer()
 
 class F1Score:
     """
-    F1Score 클래스는 참조 답변과 예측 답변의 F1 점수를 계산합니다.
-    
+    F1Score 클래스는 정답 답변과 생성 답변의 F1 점수를 계산합니다.
     """
     def __init__(self, a_gold, a_pred):
         self.a_gold = a_gold
@@ -84,7 +87,16 @@ class F1Score:
 
 
 def rouge_evaluator(reference: str, candidate: str) -> Dict:
-    # wrapper function 정의
+    """
+    정답 답변과 생성 답변에 대한 ROUGE-L score를 계산하는 함수입니다.
+    
+    Parameters:
+    reference (str): 정답 답변
+    candidate (str): 생성 답변
+    
+    Returns:
+    dict: ROUGE-L score
+    """
     scorer = rouge_scorer.RougeScorer(
         ["rougeL"], use_stemmer=True, tokenizer=kiwi_tokenizer
     )
@@ -93,6 +105,16 @@ def rouge_evaluator(reference: str, candidate: str) -> Dict:
     
     
 def semscore_evaluator(reference: str, candidate: str) -> dict:
+    """
+    정답 답변과 생성 답변에 대한 코사인 유사도를 계산하는 함수입니다.
+    
+    Parameters:
+    reference (str): 정답 답변
+    candidate (str): 생성 답변
+    
+    Returns:
+    float: 코사인 유사도
+    """
     try:
         # SentenceTransformer 모델 로드
         model = SentenceTransformer("all-mpnet-base-v2",)
@@ -121,7 +143,13 @@ def semscore_evaluator(reference: str, candidate: str) -> dict:
 
 
 def bleu_evaluator(reference: str, candidate: str) -> dict:
-    # 토큰화
+    """
+    정답 답변과 생성 답변에 대한 BLEU score를 계산하는 함수입니다.
+    
+    Parameters:
+    reference (str): 정답 답변
+    candidate (str): 생성 답변
+    """
     reference_tokens = kiwi_tokenizer.tokenize(reference, type="sentence")
     candidate_tokens = kiwi_tokenizer.tokenize(candidate, type="sentence")
 
@@ -135,5 +163,6 @@ def bleu_evaluator(reference: str, candidate: str) -> dict:
     return bleu_score
 
 def fail_rate_evaluator(candidate: str) -> dict:
+    # LLM이 답변 생성을 실패한 비율을 계산하는 함수입니다.
     fail_sentence = "모르겠습니다."
     return 1 if fail_sentence in candidate else 0
