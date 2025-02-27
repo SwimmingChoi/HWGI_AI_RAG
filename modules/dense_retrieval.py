@@ -63,6 +63,7 @@ class CustomEmbeddings(Embeddings):
                 return embedding.cpu().numpy()
         else:
             return self.model.embed_query(text)
+            
     def create_or_load_vectorstore(self, documents: Optional[List] = None, metadata: Optional[Dict] = None) -> FAISS:
         """
         FAISS 벡터 DB를 생성하거나 로드합니다.
@@ -84,18 +85,23 @@ class CustomEmbeddings(Embeddings):
             else:
                 if documents is None:
                     raise ValueError("문서가 제공되지 않았습니다.")
+                
                 logging.info("FAISS 벡터 DB를 새로 생성합니다...")
+                
                 batch_size = self.batch_size
                 total_docs = len(documents)
                 vectorstore = None
+                
                 for i in tqdm(range(0, total_docs, batch_size), desc="Creating vector DB"):
                     batch_docs = documents[i:i + batch_size]
+
                     # 각 문서에 메타데이터 추가
                     if metadata:
                         for doc in batch_docs:
                             doc_idx = documents.index(doc)
                             if doc_idx in metadata:
                                 doc.metadata.update(metadata[doc_idx])
+
                     if vectorstore is None:
                         vectorstore = FAISS.from_documents(
                             documents=batch_docs,
@@ -114,10 +120,11 @@ class CustomEmbeddings(Embeddings):
         except Exception as e:
             logging.error(f"벡터 DB 처리 중 오류 발생: {str(e)}")
             raise
+
     def similarity_search_with_score(
-        self,
-        vectorstore,
-        query: Union[str, List[str]],
+        self, 
+        vectorstore, 
+        query: Union[str, List[str]], 
         k: int = 4,
         filter_metadata: Optional[Dict] = None
     ) -> List[List[tuple]]:
@@ -132,19 +139,24 @@ class CustomEmbeddings(Embeddings):
         try:
             queries = [query] if isinstance(query, str) else query
             results = []
+            
             for i in tqdm(range(0, len(queries), self.batch_size), desc="Similarity search"):
                 batch_queries = queries[i:i + self.batch_size]
                 batch_results = []
+                
                 for q in batch_queries:
                     docs_and_scores = vectorstore.similarity_search_with_score(
-                        q,
+                        q, 
                         k=k,
                         filter=filter_metadata
                     )
                     batch_results.append(docs_and_scores)
+                    
                 results.extend(batch_results)
                 torch.cuda.empty_cache()
+                
             return results[0] if isinstance(query, str) else results
+            
         except Exception as e:
             logging.error(f"유사도 검색 중 오류 발생: {str(e)}")
             raise

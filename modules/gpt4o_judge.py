@@ -103,7 +103,6 @@ class RelevanceGrader:
         
         answer = f"""질문: {inputs}
         학생 답변: {outputs}"""
-        
         grade = self.grader_llm.invoke([
             {"role": "system", "content": relevance_instructions},
             {"role": "user", "content": answer}

@@ -25,7 +25,7 @@ question_dictionary: {question_dictionary}
             messages=[
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.1,  # 일관된 결과를 위해 낮은 temperature 사용
+            temperature=0.2,  # 일관된 결과를 위해 낮은 temperature 사용
         )
         # 응답 확인
         answer= int(response.choices[0].message.content.strip().lower())
@@ -47,8 +47,4 @@ question_dictionary: {question_dictionary}
                 return False
         except Exception as e:
             print(f"오류 발생: {str(e)}")
-<<<<<<< HEAD
             return False
-=======
-            return False
->>>>>>> d691efa331f6e657141382143838d3108100c8f4

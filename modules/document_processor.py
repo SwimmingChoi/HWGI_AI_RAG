@@ -12,7 +12,7 @@ class DocumentProcessor:
         mode: str = "pdf",
         do_chunking: bool = True,
         chunk_size: int = 1000,
-        chunk_overlap: int = 100
+        chunk_overlap: int = 100,
     ) -> Tuple[List[LangchainDocument], Dict]:
         """
         문서를 로드하고 Langchain 문서로 변환하여 처리하는 함수
@@ -67,6 +67,7 @@ class DocumentProcessor:
                                 metadata=metadata
                             )
                         )
+                    
             # Text Chunking
             if do_chunking:
                 text_splitter = RecursiveCharacterTextSplitter(
@@ -75,6 +76,16 @@ class DocumentProcessor:
                     length_function=len,
                 )
                 processed_docs = text_splitter.split_documents(langchain_docs)
+                
+                # 청크에 대한 메타데이터 추가
+                for i, doc in enumerate(processed_docs):
+                    doc.metadata.update({
+                        "chunk_index": i,
+                        "chunk_size": chunk_size,
+                        "chunk_overlap": chunk_overlap,
+                        "total_chunks": len(processed_docs)
+                    })
+                
                 logging.info(f"문서 청크 분할 완료: {len(processed_docs)} 청크 생성")
             else:
                 processed_docs = langchain_docs
@@ -82,15 +93,6 @@ class DocumentProcessor:
             # Metadata Mapping
             doc_metadata = {
                 i: {
-                    "content": doc.page_content,
-                    # "페이지": doc.metadata.get('페이지', 'Unknown'),
-                    # "목차": doc.metadata.get('목차', ''),
-                    # "유형": doc.metadata.get('유형', ''),
-                    # "조": doc.metadata.get('조', ''),
-                    # "편": doc.metadata.get('편', ''),
-                    # "장": doc.metadata.get('장', ''),
-                    # "절": doc.metadata.get('절', ''),
-                    #"페이지": doc.metadata.get('페이지', 'Unknown'),
                     "페이지": doc.metadata.get('페이지', 'Unknown'),
                     "상품명": doc.metadata.get('상품명', ''),
                     "목차": doc.metadata.get('목차', ''),

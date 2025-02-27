@@ -2,6 +2,7 @@ from modules.config_loader import load_config
 
 import re
 import os
+import torch
 import string
 import collections
 import pandas as pd
@@ -88,19 +89,28 @@ def rouge_evaluator(reference: str, candidate: str) -> Dict:
     
     
 def semscore_evaluator(reference: str, candidate: str) -> dict:
-    # SentenceTransformer 모델 로드
-    model = SentenceTransformer("all-mpnet-base-v2",)
+    try:
+        # SentenceTransformer 모델 로드
+        model = SentenceTransformer("all-mpnet-base-v2",)
 
-    # 문장 임베딩 생성
-    student_embedding = model.encode(candidate, convert_to_tensor=True)
-    reference_embedding = model.encode(reference, convert_to_tensor=True)
+        # 문장 임베딩 생성
+        student_embedding = model.encode(candidate, convert_to_tensor=True)
+        reference_embedding = model.encode(reference, convert_to_tensor=True)
 
-    # 코사인 유사도 계산
-    cosine_similarity = util.pytorch_cos_sim(
-        student_embedding, reference_embedding
-    ).item()
+        # 코사인 유사도 계산
+        cosine_similarity = util.pytorch_cos_sim(
+            student_embedding, reference_embedding
+        ).item()
 
-    return cosine_similarity
+        return cosine_similarity
+    finally:
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache() # GPU 캐시 메모리 정리
+        
+        # 모델과 임베딩 메모리 해제
+        del model
+        del student_embedding
+        del reference_embedding
 
 
 def bleu_evaluator(reference: str, candidate: str) -> dict:

@@ -73,7 +73,10 @@ def main():
             embedding_config=config,
             faiss_index_path=faiss_index_path
         )
-        retriever = embedding_service.create_or_load_vectorstore(docs)
+        retriever = embedding_service.create_or_load_vectorstore(
+            documents=docs,
+            metadata=metadata
+        )
         
     elif retrieval_type == 'hybrid':
         retrieversp = BM25Retriever(docs) #tokenizer=config['retrieval']['tokenizer']
@@ -93,7 +96,7 @@ def main():
         retrieverde = embedding_service.create_or_load_vectorstore(docs)
         retrieverde = retrieverde.as_retriever(search_kwargs={
             "k": config['retrieval']['top_k'],
-            "search_type": config['retrieval']['search_type']
+            "search_type": config['retrieval']['search_type'],
         })
         retriever = EnsembleRetriever(
             retrievers=[retrieversp, retrieverde],
@@ -125,7 +128,7 @@ def main():
     # 출력 파일 경로 설정
     output_file = os.path.join(
         config['output']['save_path'], 
-        f"result_{today_date}_q_{qna_name}.json"
+        f"result_{today_date}_q_{qna_name}_faq02.json"
     )
 
 
@@ -173,11 +176,11 @@ def main():
                 logger.info(f"중복된 키 '{new_key}'가 질문 번호 {num}에 이미 존재합니다. 추가하지 않습니다.")
                 continue
             else:
-                # result = qa_chain.multi_step_qa(question, reset_memory=True)
-                result = qa_chain.process_question(question, reset_memory=True)
+                # from IPython import embed; embed()
+                result = qa_chain.multi_step_qa(question, reset_memory=True)
                 end_time = time()
                 execution_time = end_time - start_time
-                logger.info(f"질문 번호 {num}의 소요 시간: {execution_time}초")
+                logger.info(f"질문 번호 {num}의 소요 시간: {execution_time:.3f}초")
                 save_results[num]['llm response'][new_key] = json_saver.save_response(
                     result, execution_time
                     )
@@ -205,14 +208,15 @@ def main():
                         }
                     },
                 }
+                logger.info(f"질문 번호 {num}의 소요 시간: {execution_time:.3f}초")
                 logger.info(f"새 질문 번호 {num}의 결과를 저장했습니다.")
                 continue
             # 새로운 질문 추가
-            # result = qa_chain.multi_step_qa(question, reset_memory=True)
-            result = qa_chain.process_question(question, reset_memory=True)
+            # from IPython import embed; embed()
+            result = qa_chain.multi_step_qa(question, reset_memory=True)
             end_time = time()
             execution_time = end_time - start_time
-            logger.info(f"질문 번호 {num}의 소요 시간: {execution_time}초")
+            logger.info(f"질문 번호 {num}의 소요 시간: {execution_time:.3f}초")
             if 'context_labeling' in config['dataset']['qna']:
                 save_results[num] = {
                     "number": num,

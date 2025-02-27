@@ -15,8 +15,11 @@ from modules.eval import (
     F1Score,
     rouge_evaluator,
     semscore_evaluator,
-    bleu_evaluator
+    bleu_evaluator,
+    fail_rate_evaluator
 )
+
+from utils.logger import setup_logger
 
 
 parser = argparse.ArgumentParser(description='Enter user name for the config script')
@@ -26,6 +29,7 @@ args = parser.parse_args()
 # 설정 로드
 current_dir = os.path.dirname(os.path.abspath(__file__))
 openai_config = load_config(os.path.join(current_dir, "config", f"{args.config}.yaml"))['openai']
+logger = setup_logger()
 
 def gpt4o_eval(df):
     # 1. 정확성 채점
@@ -110,30 +114,34 @@ def quantitative_eval(df):
     )
     
     # 2. ROUGE 점수 계산
-    def compute_rouge_score(row):
-        score = rouge_evaluator(row['ground truth answer'], row['rag answer'])
-        return score.fmeasure
     df.loc[:, 'rougeL'] = df.apply(
-        lambda row: pd.Series(compute_rouge_score(row)),
+        lambda row: pd.Series(
+            rouge_evaluator(row['ground truth answer'], row['rag answer']).fmeasure
+            ),
         axis=1
     )
-    df.to_excel('rouge_score_sample.xlsx', index=False)
-    
-    # 3. SemScore 점수 계산
-    def compute_semscore(row):
-        score = semscore_evaluator(row['ground truth answer'], row['rag answer'])
-        return score
-    df.loc[:, 'semscore'] = df.apply(
-        lambda row: pd.Series(compute_semscore(row)),
-        axis=1
-    )
+
+    # # 3. SemScore 점수 계산
+    # df.loc[:, 'semscore'] = df.apply(
+    #     lambda row: pd.Series(
+    #         semscore_evaluator(row['ground truth answer'], row['rag answer'])
+    #         ),
+    #     axis=1
+    # )
     
     # 4. BLEU 점수 계산
-    def compute_bleu_score(row):
-        score = bleu_evaluator(row['ground truth answer'], row['rag answer'])
-        return score
     df.loc[:, 'bleu'] = df.apply(
-        lambda row: pd.Series(compute_bleu_score(row)),
+        lambda row: pd.Series(
+            bleu_evaluator(row['ground truth answer'], row['rag answer'])
+            ),
+        axis=1
+    )
+    
+    # 5. Fail Rate 계산
+    df.loc[:, 'fail_rate'] = df.apply(
+        lambda row: pd.Series(
+            fail_rate_evaluator(row['rag answer'])
+            ),
         axis=1
     )
     
@@ -150,6 +158,31 @@ def main():
     
     with open(os.path.join(current_dir, 'results', results_file), 'r', encoding='utf-8') as file:
         results = json.load(file)
+            
+    os.makedirs('evaluation_results', exist_ok=True)
+    results_file = results_file.replace('.json', '.xlsx')
+    output_file = f'evaluation_results/gpt4o-judge_{results_file}'
+    
+    # 컬럼 순서 정리
+    column_order = [
+        'method', 'question', 'ground truth answer', 'rag answer',
+        'correctness_score', 'correctness_explanation',
+        'relevance_score', 'relevance_explanation',
+        'grounded_score', 'grounded_explanation',
+        'retrieval_relevance_score', 'retrieval_relevance_explanation',
+        'precision', 'recall', 'f1',
+        'rougeL', 'bleu', 'fail_rate', "time"
+    ]
+    
+    # 기존 결과 로드
+    if os.path.exists(output_file):
+        save_results = pd.read_excel(output_file)
+        logger.info("기존 결과 파일을 불러왔습니다.")
+    else:
+        save_results = pd.DataFrame(
+            columns=column_order
+        )
+        logger.info("새로운 결과 파일을 생성합니다.")
     
    # DataFrame 생성 부분 수정
     data = []
@@ -161,45 +194,48 @@ def main():
                 "ground truth answer pages": row['ground truth answer pages'],
                 "method": method,
                 "rag answer": response['answer'],  # 메서드별 응답 접근
-                "rag answer page contents": response['page contents']  # 메서드별 페이지 내용
+                "rag answer page contents": response['page contents'],  # 메서드별 페이지 내용
+                "time": response['time']
             })
     
     df = pd.DataFrame(data)
     
     print("평가를 시작합니다.")
     evaluation_results = []
-    
+    new_methods_found = False  # 새로운 method가 있는지 확인하는 플래그
+
     for method in df['method'].unique():
-        print('-'*100)
-        print(f"[{method}]")
-        print('-'*100)
-        df_method = df[df['method'] == method].copy()
-        
-        # 양적 평가
-        print("양적 평가 시작...")
-        df_method = quantitative_eval(df_method)
-        print("✅ 양적 평가 완료")
-        
-        # GPT-4o 평가
-        print(f"GPT-4o 평가 시작")
-        df_method = gpt4o_eval(df_method)
-        print("✅  GPT-4o 평가 완료")
-        
-        evaluation_results.append(df_method)
+        if method in save_results['method'].unique():
+            logger.info(f"중복된 메서드 '{method}'가 이미 존재합니다. 추가하지 않습니다.")
+            continue
+        else:
+            new_methods_found = True  # 새로운 method 발견
+            df_method = df[df['method'] == method].copy()
+
+            print('-'*100)
+            print(f"[{method}]")
+            print('-'*100)
+            
+            # 양적 평가
+            print("양적 평가 시작...")
+            df_method = quantitative_eval(df_method)
+            print("✅ 양적 평가 완료")
+            
+            # GPT-4o 평가
+            print(f"GPT-4o 평가 시작")
+            df_method = gpt4o_eval(df_method)
+            print("✅  GPT-4o 평가 완료")
+            
+            evaluation_results.append(df_method)
     
     # 결과 통합
-    final_df = pd.concat(evaluation_results, axis=0, ignore_index=True)
-    
-    # 컬럼 순서 정리
-    column_order = [
-        'method', 'question', 'ground truth answer', 'rag answer',
-        'correctness_score', 'correctness_explanation',
-        'relevance_score', 'relevance_explanation',
-        'grounded_score', 'grounded_explanation',
-        'retrieval_relevance_score', 'retrieval_relevance_explanation',
-        'precision', 'recall', 'f1',
-        'rougeL', 'semscore', 'bleu'
-    ]
+    if new_methods_found:  # 새로운 method가 있을 경우에만 concat 수행
+        final_df = pd.concat(evaluation_results, axis=0, ignore_index=True)
+        if len(save_results) > 0:
+            final_df = pd.concat([save_results, final_df], axis=0, ignore_index=True)
+    else:
+        final_df = save_results.copy()  # 새로운 method가 없으면 기존 결과를 그대로 사용
+
     
     # 결과 저장 전 데이터 확인
     print("\n=== 최종 데이터 확인 ===")
@@ -212,25 +248,25 @@ def main():
     final_df = final_df[column_order]
     
     # 결과 저장
-    os.makedirs('evaluation_results', exist_ok=True)
-    results_file = results_file.replace('.json', '.xlsx')
-    output_path = f'evaluation_results/gpt4o-judge_{results_file}'
-    final_df.to_excel(output_path, index=False)
+    final_df.to_excel(output_file, index=False)
     
     # 메서드별 평균 점수 출력
     print("\n=== 평가 결과 요약 ===")
     for method in final_df['method'].unique():
         method_df = final_df[final_df['method'] == method]
         print(f"\n[{method}]")
-        print(f"정확성 점수: {(method_df['correctness_score'] == True).mean():.2%}")
-        print(f"관련성 점수: {(method_df['relevance_score'] == True).mean():.2%}")
-        print(f"근거성 점수: {(method_df['grounded_score'] == True).mean():.2%}")
-        print(f"F1 점수: {method_df['f1'].mean():.4f}")
-        print(f"ROUGE-L 점수: {method_df['rougeL'].mean():.4f}")
-        print(f"SemScore 점수: {method_df['semscore'].mean():.4f}")
-        print(f"BLEU 점수: {method_df['bleu'].mean():.4f}")
-    
-    print(f"\n✅ 평가 결과 저장 완료: {output_path}")
+        print(f"정확성 점수: {(method_df['correctness_score'] == True).mean():.1%}")
+        print(f"관련성 점수: {(method_df['relevance_score'] == True).mean():.1%}")
+        print(f"근거성 점수: {(method_df['grounded_score'] == True).mean():.1%}")
+        print(f"추출 관련성 점수: {(method_df['retrieval_relevance_score'] == True).mean():.1%}")
+        print(f"F1 점수: {method_df['f1'].mean():.3f}")
+        print(f"ROUGE-L 점수: {method_df['rougeL'].mean():.3f}")
+        # print(f"SemScore 점수: {method_df['semscore'].mean():.3f}")
+        print(f"BLEU 점수: {method_df['bleu'].mean():.3f}")
+        print(f"Fail Rate: {method_df['fail_rate'].mean():.3f}")
+        print(f"소요 시간: {method_df['time'].mean():.3f}초")
+        
+    print(f"\n✅ 평가 결과 저장 완료: {output_file}")
 
 if __name__ == "__main__":
     main()
