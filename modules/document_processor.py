@@ -49,7 +49,7 @@ class DocumentProcessor:
                 for item in json_data:
                     # 전체내용이 있는 경우만 처리
                     if item.get("내용"):
-                        content = '#'+item['목차']+"  "+item["내용"]+" "+str(item['테이블내용'])
+                        content = '#' + item["목차"] + "  " + item["내용"] + " " + str(item["테이블내용"])
                         # 메타데이터 설정
                         metadata = {
                             "페이지": item.get("페이지", "Unknown"),

@@ -8,65 +8,66 @@ from modules.document_processor import DocumentProcessor
 import os
 import torch
 import argparse
-
-parser = argparse.ArgumentParser(description='Enter user name for the config script')
-parser.add_argument('--config', type=str, required=False, default='config')
-args = parser.parse_args()
-
-current_dir = os.path.dirname(os.path.abspath(__file__))
-config = load_config(os.path.join(current_dir, "config", f"{args.config}.yaml"))
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
-print("general insurace uploading....")
-doc_processor = DocumentProcessor()
-docs, metadata = doc_processor.load_and_process_documents(
-    file_path=config['dataset']['document'],
-    mode=config['dataset']['document_type'],
-    do_chunking=config['preprocessing']['chunking'],
-    chunk_size=config['preprocessing']['chunk_size'],
-    chunk_overlap=config['preprocessing']['chunk_overlap']
-)
-
-##retriever
-retrieversp = BM25Retriever(docs) #tokenizer=config['retrieval']['tokenizer']
-faiss_index_path = config['dataset']['document'].replace(
-    '.json',
-    f"_{config['dense_model']['model_type']}_" +
-    ('chunk.bin' if config['preprocessing']['chunking'] else 'full.bin')
-)
-embedding_service = CustomEmbeddings(
-    model_type=config['dense_model']['model_type'],
-    model_path=config['dense_model']['model_cache'],
-    device=device,
-    embedding_config=config,
-    faiss_index_path=faiss_index_path,
-)
-retrieverde = embedding_service.create_or_load_vectorstore(docs)
-retrieverde = retrieverde.as_retriever(search_kwargs={
-    "k": config['retrieval']['top_k'],
-    "search_type": config['retrieval']['search_type']
-})
-
-retriever_hybrid = EnsembleRetriever(
-    retrievers=[retrieversp, retrieverde],
-    weights=[0.4, 0.6])
-print("retrieval type saved")
-
-qa_chain = QAChain(
-    openai_config=config['openai'],
-    retriever= retriever_hybrid,
-    search_type="hybrid", 
-    query_translation_type='query_rewrite',
-    top_k= 20,
-    use_reranker=True,
-    reranker_model="Dongjin-kr/ko-reranker",
-    reranker_top_k=20
-)
-print("qa-chain saved")
+import gradio as gr
 
 
 def main():
-    import gradio as gr
+    
+    parser = argparse.ArgumentParser(description='Enter user name for the config script')
+    parser.add_argument('--config', type=str, required=False, default='config')
+    args = parser.parse_args()
+
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    config = load_config(os.path.join(current_dir, "config", f"{args.config}.yaml"))
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+    print("general insurace uploading....")
+
+    doc_processor = DocumentProcessor()
+    docs, metadata = doc_processor.load_and_process_documents(
+        file_path=config['dataset']['document'],
+        mode=config['dataset']['document_type'],
+        do_chunking=config['preprocessing']['chunking'],
+        chunk_size=config['preprocessing']['chunk_size'],
+        chunk_overlap=config['preprocessing']['chunk_overlap']
+    )
+
+    ##retriever
+    retrieversp = BM25Retriever(docs) #tokenizer=config['retrieval']['tokenizer']
+    faiss_index_path = config['dataset']['document'].replace(
+        '.json',
+        f"_{config['dense_model']['model_type']}_" +
+        ('chunk.bin' if config['preprocessing']['chunking'] else 'full.bin')
+    )
+    embedding_service = CustomEmbeddings(
+        model_type=config['dense_model']['model_type'],
+        model_path=config['dense_model']['model_cache'],
+        device=device,
+        embedding_config=config,
+        faiss_index_path=faiss_index_path,
+    )
+    retrieverde = embedding_service.create_or_load_vectorstore(docs)
+    retrieverde = retrieverde.as_retriever(search_kwargs={
+        "k": config['retrieval']['top_k'],
+        "search_type": config['retrieval']['search_type']
+    })
+
+    retriever_hybrid = EnsembleRetriever(
+        retrievers=[retrieversp, retrieverde],
+        weights=[0.4, 0.6])
+    print("retrieval type saved")
+
+    qa_chain = QAChain(
+        openai_config=config['openai'],
+        retriever= retriever_hybrid,
+        search_type=config['retrieval']['type'], 
+        query_translation_type=config['query_translation']['type'],
+        top_k= config['retrieval']['top_k'],
+        use_reranker=config['retrieval']['reranker'],
+        reranker_model=config['retrieval']['reranker_model'],
+        reranker_top_k=config['retrieval']['reranker_top_k']
+    )
+    print("qa-chain saved")
     
     hanwha=f'''
 한화손해보험 고객상담센터(1566-8000)로 문의해주세요.

@@ -121,13 +121,13 @@ def quantitative_eval(df):
         axis=1
     )
 
-    # # 3. SemScore 점수 계산
-    # df.loc[:, 'semscore'] = df.apply(
-    #     lambda row: pd.Series(
-    #         semscore_evaluator(row['ground truth answer'], row['rag answer'])
-    #         ),
-    #     axis=1
-    # )
+    # 3. SemScore 점수 계산
+    df.loc[:, 'semscore'] = df.apply(
+        lambda row: pd.Series(
+            semscore_evaluator(row['ground truth answer'], row['rag answer'])
+            ),
+        axis=1
+    )
     
     # 4. BLEU 점수 계산
     df.loc[:, 'bleu'] = df.apply(
@@ -154,11 +154,10 @@ def main():
     results_files = [f for f in os.listdir(results_dir) if f.endswith('.json')]
     results_files.sort(key=lambda x: os.path.getmtime(os.path.join(results_dir, x)))
     results_file = results_files[-1]
-    print(results_file)
     
     with open(os.path.join(current_dir, 'results', results_file), 'r', encoding='utf-8') as file:
         results = json.load(file)
-            
+        
     os.makedirs('evaluation_results', exist_ok=True)
     results_file = results_file.replace('.json', '.xlsx')
     output_file = f'evaluation_results/gpt4o-judge_{results_file}'
@@ -171,7 +170,7 @@ def main():
         'grounded_score', 'grounded_explanation',
         'retrieval_relevance_score', 'retrieval_relevance_explanation',
         'precision', 'recall', 'f1',
-        'rougeL', 'bleu', 'fail_rate', "time"
+        'rougeL', 'bleu', 'semscore', 'fail_rate', "time"
     ]
     
     # 기존 결과 로드
@@ -184,7 +183,7 @@ def main():
         )
         logger.info("새로운 결과 파일을 생성합니다.")
     
-   # DataFrame 생성 부분 수정
+# DataFrame 생성 부분 수정
     data = []
     for row in results:
         for method, response in row['llm response'].items():
@@ -261,7 +260,7 @@ def main():
         print(f"추출 관련성 점수: {(method_df['retrieval_relevance_score'] == True).mean():.1%}")
         print(f"F1 점수: {method_df['f1'].mean():.3f}")
         print(f"ROUGE-L 점수: {method_df['rougeL'].mean():.3f}")
-        # print(f"SemScore 점수: {method_df['semscore'].mean():.3f}")
+        print(f"SemScore 점수: {method_df['semscore'].mean():.3f}")
         print(f"BLEU 점수: {method_df['bleu'].mean():.3f}")
         print(f"Fail Rate: {method_df['fail_rate'].mean():.3f}")
         print(f"소요 시간: {method_df['time'].mean():.3f}초")

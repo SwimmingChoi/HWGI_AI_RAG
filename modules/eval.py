@@ -19,6 +19,10 @@ from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 kiwi_tokenizer = KiwiTokenizer()
 
 class F1Score:
+    """
+    F1Score 클래스는 참조 답변과 예측 답변의 F1 점수를 계산합니다.
+    
+    """
     def __init__(self, a_gold, a_pred):
         self.a_gold = a_gold
         self.a_pred = a_pred
@@ -107,10 +111,13 @@ def semscore_evaluator(reference: str, candidate: str) -> dict:
         if torch.cuda.is_available():
             torch.cuda.empty_cache() # GPU 캐시 메모리 정리
         
-        # 모델과 임베딩 메모리 해제
-        del model
-        del student_embedding
-        del reference_embedding
+        # 모델이 존재하는 경우에만 삭제
+        if 'model' in locals():
+            del model
+        if 'student_embedding' in locals():
+            del student_embedding
+        if 'reference_embedding' in locals():
+            del reference_embedding
 
 
 def bleu_evaluator(reference: str, candidate: str) -> dict:
